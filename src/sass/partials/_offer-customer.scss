@@ -1,0 +1,180 @@
+#customer-auction {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #e3e3e3;
+    .customer-action_title{
+        h2{
+            font-size: 22px;
+            padding: 10px 15px;
+            color: #fff;
+            background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper-content-customer{
+        padding: 10px 10px;
+    }
+    .customer-title{
+        border-bottom: 1px solid #e8e8e8;
+        position: relative;
+    }
+    input, textarea {
+        border: 1px solid #ccc !important;
+    }
+    .auction-upload-btn {
+        input[type="file"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .btn-upload {
+            background: #6190E8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            color: #fff;
+            cursor: pointer;
+            z-index: 99;
+            margin: 0;
+        }
+    }
+    .auction-upload-image {
+        min-height: 150px;
+    }
+}
+
+.offer-cancel{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1111;
+    i{
+        &::before{
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+.offer-order{
+    max-height: 250px;
+    height: 100%;
+    overflow-y: auto;
+    margin: 15px;
+    
+}
+
+.box-list-order-hover{
+    transition: all .3s ease;
+    &:hover{
+        box-shadow: 0 0 6px 2px #ccc;
+        transition: all .3s ease;
+    }
+}
+.box-list-order{
+    display: flex;
+}
+.img-list{
+    img{
+        width: 100%;
+        max-width: 100px;
+        height: 80px;
+    }
+    
+}
+.title-list{
+    padding: 0 15px;
+    img{
+        width: 100px;
+        display: block;
+    }
+}
+
+.btn-auction{
+    button{
+        outline: none;
+        padding: 5px 10px;
+        background-color: #888;
+        color: white;
+    }
+}
+
+#popup-dongnhan,
+#popup-furnist,
+#popup-relax{
+    .bg-popup{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.4);
+        z-index: 1111;
+    }
+    .popup-control{
+        background-color: #fff;
+        width: 450px;
+        max-height: 350px;
+        height: 100%;
+        overflow-y: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        border-radius: 3px;
+        z-index: 3333;
+    }
+    .custom-img{
+        img{
+            max-width: 200px;
+            height: 150px;
+            width: 100%;
+        }
+    }
+    .title-list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .img-order-custom{
+        img{
+            width: 160px;
+        }
+    }
+    .price{
+        margin-top: 10px;
+    }
+    .describe{
+        padding: 10px 0;
+        h5{
+            color: green;
+            font-size: 18px;
+        }
+    }
+    .btn-group-control{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .btn-cancel-popup{
+        padding: 5px 10px;
+        background-color: rgb(182, 44, 44);
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        cursor: pointer;
+    }
+}

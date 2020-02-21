@@ -1,0 +1,70 @@
+extends ../layouts/layout-admin.pug
+block main-content
+    .page-wrapper
+        //- header-mobile
+        include ./../partials/header-mobile-admin.pug
+        //- sidebar
+        include ./../partials/menu-sidebar-admin.pug
+        //- PAGE CONTAINER
+        .page-container
+            //- HEADER DESKTOP
+            include ./../partials/header-admin.pug
+            //- MAIN CONTENT
+            .main-content
+                .section__content.section__content--p30
+                    .container-fluid
+                        .row
+                            .col-lg-6
+                                .au-card.m-b-30
+                                    .au-card-inner
+                                        h3.title-2.m-b-40 Yearly Sales
+                                        canvas#sales-chart
+                            .col-lg-6
+                                .au-card.m-b-30
+                                    .au-card-inner
+                                        h3.title-2.m-b-40 Team Commits
+                                        canvas#team-chart
+                            .col-lg-6
+                                .au-card.m-b-30
+                                    .au-card-inner
+                                        h3.title-2.m-b-40 Bar chart
+                                        canvas#barChart
+                            .col-lg-6
+                                .au-card.m-b-30
+                                    .au-card-inner
+                                        h3.title-2.m-b-40 Rader chart
+                                        canvas#radarChart
+                            .col-lg-6
+                                .au-card.m-b-30
+                                    .au-card-inner
+                                        h3.title-2.m-b-40 Line Chart
+                                        canvas#lineChart
+                            .col-lg-6
+                                .au-card.m-b-30
+                                    .au-card-inner
+                                        h3.title-2.m-b-40 Doughut Chart
+                                        canvas#doughutChart
+                            .col-lg-6
+                                .au-card.m-b-30
+                                    .au-card-inner
+                                        h3.title-2.m-b-40 Pie Chart
+                                        canvas#pieChart
+                            .col-lg-6
+                                .au-card.m-b-30
+                                    .au-card-inner
+                                        h3.title-2.m-b-40 Polar Chart
+                                        canvas#polarChart
+                            .col-lg-6
+                                .au-card.m-b-30
+                                    .au-card-inner
+                                        h3.title-2.m-b-40 Single Bar Chart
+                                        canvas#singelBarChart
+                        .row
+                            .col-md-12
+                                .copyright
+                                    p
+                                        | Copyright © 2018 Colorlib. All rights reserved. Template by 
+                                        a(href='https://colorlib.com') Colorlib
+                                        | .
+            // END MAIN CONTENT
+            // END PAGE CONTAINER

@@ -1,0 +1,494 @@
+extends ../layouts/layout-admin.pug
+block main-content
+    .page-wrapper
+        //- header-mobile
+        include ./../partials/header-mobile-admin.pug
+        //- sidebar
+        include ./../partials/menu-sidebar-admin.pug
+        //- PAGE CONTAINER
+        .page-container
+            //- HEADER DESKTOP
+            include ./../partials/header-admin.pug
+            //- MAIN CONTENT
+            .main-content
+                .section__content.section__content--p30
+                    .container-fluid
+                        .row
+                            .col-lg-9
+                                .table-responsive.table--no-card.m-b-30
+                                    table.table.table-borderless.table-striped.table-earning
+                                        thead
+                                            tr
+                                                th date
+                                                th order ID
+                                                th name
+                                                th.text-right price
+                                                th.text-right quantity
+                                                th.text-right total
+                                        tbody
+                                            tr
+                                                td 2018-09-29 05:57
+                                                td 100398
+                                                td iPhone X 64Gb Grey
+                                                td.text-right $999.00
+                                                td.text-right 1
+                                                td.text-right $999.00
+                                            tr
+                                                td 2018-09-28 01:22
+                                                td 100397
+                                                td Samsung S8 Black
+                                                td.text-right $756.00
+                                                td.text-right 1
+                                                td.text-right $756.00
+                                            tr
+                                                td 2018-09-27 02:12
+                                                td 100396
+                                                td Game Console Controller
+                                                td.text-right $22.00
+                                                td.text-right 2
+                                                td.text-right $44.00
+                                            tr
+                                                td 2018-09-26 23:06
+                                                td 100395
+                                                td iPhone X 256Gb Black
+                                                td.text-right $1199.00
+                                                td.text-right 1
+                                                td.text-right $1199.00
+                                            tr
+                                                td 2018-09-25 19:03
+                                                td 100393
+                                                td USB 3.0 Cable
+                                                td.text-right $10.00
+                                                td.text-right 3
+                                                td.text-right $30.00
+                                            tr
+                                                td 2018-09-29 05:57
+                                                td 100392
+                                                td Smartwatch 4.0 LTE Wifi
+                                                td.text-right $199.00
+                                                td.text-right 6
+                                                td.text-right $1494.00
+                                            tr
+                                                td 2018-09-24 19:10
+                                                td 100391
+                                                td Camera C430W 4k
+                                                td.text-right $699.00
+                                                td.text-right 1
+                                                td.text-right $699.00
+                                            tr
+                                                td 2018-09-22 00:43
+                                                td 100393
+                                                td USB 3.0 Cable
+                                                td.text-right $10.00
+                                                td.text-right 3
+                                                td.text-right $30.00
+                            .col-lg-3
+                                .au-card.au-card--bg-blue.au-card-top-countries.m-b-30
+                                    .au-card-inner
+                                        .table-responsive
+                                            table.table.table-top-countries
+                                                tbody
+                                                    tr
+                                                        td United States
+                                                        td.text-right $119,366.96
+                                                    tr
+                                                        td Australia
+                                                        td.text-right $70,261.65
+                                                    tr
+                                                        td United Kingdom
+                                                        td.text-right $46,399.22
+                                                    tr
+                                                        td Turkey
+                                                        td.text-right $35,364.90
+                                                    tr
+                                                        td Germany
+                                                        td.text-right $20,366.96
+                                                    tr
+                                                        td France
+                                                        td.text-right $10,366.96
+                                                    tr
+                                                        td Australia
+                                                        td.text-right $5,366.96
+                                                    tr
+                                                        td Italy
+                                                        td.text-right $1639.32
+                        .row
+                            .col-lg-6
+                                // USER DATA
+                                .user-data.m-b-30
+                                    h3.title-3.m-b-30
+                                        i.zmdi.zmdi-account-calendar
+                                        | user data
+                                    .filters.m-b-45
+                                        .rs-select2--dark.rs-select2--md.m-r-10.rs-select2--border
+                                            select.js-select2(name='property')
+                                                option(selected='selected') All Properties
+                                                option(value='') Products
+                                                option(value='') Services
+                                            .dropDownSelect2
+                                        .rs-select2--dark.rs-select2--sm.rs-select2--border
+                                            select.js-select2.au-select-dark(name='time')
+                                                option(selected='selected') All Time
+                                                option(value='') By Month
+                                                option(value='') By Day
+                                            .dropDownSelect2
+                                    .table-responsive.table-data
+                                        table.table
+                                            thead
+                                                tr
+                                                    td
+                                                        label.au-checkbox
+                                                            input(type='checkbox')
+                                                            span.au-checkmark
+                                                    td name
+                                                    td role
+                                                    td type
+                                                    td
+                                            tbody
+                                                tr
+                                                    td
+                                                        label.au-checkbox
+                                                            input(type='checkbox')
+                                                            span.au-checkmark
+                                                    td
+                                                        .table-data__info
+                                                            h6 lori lynch
+                                                            span
+                                                                a(href='#') johndoe@gmail.com
+                                                    td
+                                                        span.role.admin admin
+                                                    td
+                                                        .rs-select2--trans.rs-select2--sm
+                                                            select.js-select2(name='property')
+                                                                option(selected='selected') Full Control
+                                                                option(value='') Post
+                                                                option(value='') Watch
+                                                            .dropDownSelect2
+                                                    td
+                                                        span.more
+                                                            i.zmdi.zmdi-more
+                                                tr
+                                                    td
+                                                        label.au-checkbox
+                                                            input(type='checkbox', checked='checked')
+                                                            span.au-checkmark
+                                                    td
+                                                        .table-data__info
+                                                            h6 lori lynch
+                                                            span
+                                                                a(href='#') johndoe@gmail.com
+                                                    td
+                                                        span.role.user user
+                                                    td
+                                                        .rs-select2--trans.rs-select2--sm
+                                                            select.js-select2(name='property')
+                                                                option(value='') Full Control
+                                                                option(value='', selected='selected') Post
+                                                                option(value='') Watch
+                                                            .dropDownSelect2
+                                                    td
+                                                        span.more
+                                                            i.zmdi.zmdi-more
+                                                tr
+                                                    td
+                                                        label.au-checkbox
+                                                            input(type='checkbox')
+                                                            span.au-checkmark
+                                                    td
+                                                        .table-data__info
+                                                            h6 lori lynch
+                                                            span
+                                                                a(href='#') johndoe@gmail.com
+                                                    td
+                                                        span.role.user user
+                                                    td
+                                                        .rs-select2--trans.rs-select2--sm
+                                                            select.js-select2(name='property')
+                                                                option(value='') Full Control
+                                                                option(value='', selected='selected') Post
+                                                                option(value='') Watch
+                                                            .dropDownSelect2
+                                                    td
+                                                        span.more
+                                                            i.zmdi.zmdi-more
+                                                tr
+                                                    td
+                                                        label.au-checkbox
+                                                            input(type='checkbox')
+                                                            span.au-checkmark
+                                                    td
+                                                        .table-data__info
+                                                            h6 lori lynch
+                                                            span
+                                                                a(href='#') johndoe@gmail.com
+                                                    td
+                                                        span.role.member member
+                                                    td
+                                                        .rs-select2--trans.rs-select2--sm
+                                                            select.js-select2(name='property')
+                                                                option(selected='selected') Full Control
+                                                                option(value='') Post
+                                                                option(value='') Watch
+                                                            .dropDownSelect2
+                                                    td
+                                                        span.more
+                                                            i.zmdi.zmdi-more
+                                    .user-data__footer
+                                        button.au-btn.au-btn-load load more
+                                // END USER DATA
+                            .col-lg-6
+                                // TOP CAMPAIGN
+                                .top-campaign
+                                    h3.title-3.m-b-30 top campaigns
+                                    .table-responsive
+                                        table.table.table-top-campaign
+                                            tbody
+                                                tr
+                                                    td 1. Australia
+                                                    td $70,261.65
+                                                tr
+                                                    td 2. United Kingdom
+                                                    td $46,399.22
+                                                tr
+                                                    td 3. Turkey
+                                                    td $35,364.90
+                                                tr
+                                                    td 4. Germany
+                                                    td $20,366.96
+                                                tr
+                                                    td 5. France
+                                                    td $10,366.96
+                                                tr
+                                                    td 3. Turkey
+                                                    td $35,364.90
+                                                tr
+                                                    td 4. Germany
+                                                    td $20,366.96
+                                                tr
+                                                    td 5. France
+                                                    td $10,366.96
+                                                tr
+                                                    td 3. Turkey
+                                                    td $35,364.90
+                                                tr
+                                                    td 4. Germany
+                                                    td $20,366.96
+                                                tr
+                                                    td 5. France
+                                                    td $10,366.96
+                                                tr
+                                                    td 4. Germany
+                                                    td $20,366.96
+                                // END TOP CAMPAIGN
+                        .row
+                            .col-md-12
+                                // DATA TABLE
+                                h3.title-5.m-b-35 data table
+                                .table-data__tool
+                                    .table-data__tool-left
+                                        .rs-select2--light.rs-select2--md
+                                            select.js-select2(name='property')
+                                                option(selected='selected') All Properties
+                                                option(value='') Option 1
+                                                option(value='') Option 2
+                                            .dropDownSelect2
+                                        .rs-select2--light.rs-select2--sm
+                                            select.js-select2(name='time')
+                                                option(selected='selected') Today
+                                                option(value='') 3 Days
+                                                option(value='') 1 Week
+                                            .dropDownSelect2
+                                        button.au-btn-filter
+                                            i.zmdi.zmdi-filter-list
+                                            | filters
+                                    .table-data__tool-right
+                                        button.au-btn.au-btn-icon.au-btn--green.au-btn--small
+                                            i.zmdi.zmdi-plus
+                                            | add item
+                                        .rs-select2--dark.rs-select2--sm.rs-select2--dark2
+                                            select.js-select2(name='type')
+                                                option(selected='selected') Export
+                                                option(value='') Option 1
+                                                option(value='') Option 2
+                                            .dropDownSelect2
+                                .table-responsive.table-responsive-data2
+                                    table.table.table-data2
+                                        thead
+                                            tr
+                                                th
+                                                    label.au-checkbox
+                                                        input(type='checkbox')
+                                                        span.au-checkmark
+                                                th name
+                                                th email
+                                                th description
+                                                th date
+                                                th status
+                                                th price
+                                                th
+                                        tbody
+                                            tr.tr-shadow
+                                                td
+                                                    label.au-checkbox
+                                                        input(type='checkbox')
+                                                        span.au-checkmark
+                                                td Lori Lynch
+                                                td
+                                                    span.block-email lori@example.com
+                                                td.desc Samsung S8 Black
+                                                td 2018-09-27 02:12
+                                                td
+                                                    span.status--process Processed
+                                                td $679.00
+                                                td
+                                                    .table-data-feature
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Send')
+                                                            i.zmdi.zmdi-mail-send
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Edit')
+                                                            i.zmdi.zmdi-edit
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Delete')
+                                                            i.zmdi.zmdi-delete
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='More')
+                                                            i.zmdi.zmdi-more
+                                            tr.spacer
+                                            tr.tr-shadow
+                                                td
+                                                    label.au-checkbox
+                                                        input(type='checkbox')
+                                                        span.au-checkmark
+                                                td Lori Lynch
+                                                td
+                                                    span.block-email john@example.com
+                                                td.desc iPhone X 64Gb Grey
+                                                td 2018-09-29 05:57
+                                                td
+                                                    span.status--process Processed
+                                                td $999.00
+                                                td
+                                                    .table-data-feature
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Send')
+                                                            i.zmdi.zmdi-mail-send
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Edit')
+                                                            i.zmdi.zmdi-edit
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Delete')
+                                                            i.zmdi.zmdi-delete
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='More')
+                                                            i.zmdi.zmdi-more
+                                            tr.spacer
+                                            tr.tr-shadow
+                                                td
+                                                    label.au-checkbox
+                                                        input(type='checkbox')
+                                                        span.au-checkmark
+                                                td Lori Lynch
+                                                td
+                                                    span.block-email lyn@example.com
+                                                td.desc iPhone X 256Gb Black
+                                                td 2018-09-25 19:03
+                                                td
+                                                    span.status--denied Denied
+                                                td $1199.00
+                                                td
+                                                    .table-data-feature
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Send')
+                                                            i.zmdi.zmdi-mail-send
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Edit')
+                                                            i.zmdi.zmdi-edit
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Delete')
+                                                            i.zmdi.zmdi-delete
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='More')
+                                                            i.zmdi.zmdi-more
+                                            tr.spacer
+                                            tr.tr-shadow
+                                                td
+                                                    label.au-checkbox
+                                                        input(type='checkbox')
+                                                        span.au-checkmark
+                                                td Lori Lynch
+                                                td
+                                                    span.block-email doe@example.com
+                                                td.desc Camera C430W 4k
+                                                td 2018-09-24 19:10
+                                                td
+                                                    span.status--process Processed
+                                                td $699.00
+                                                td
+                                                    .table-data-feature
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Send')
+                                                            i.zmdi.zmdi-mail-send
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Edit')
+                                                            i.zmdi.zmdi-edit
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='Delete')
+                                                            i.zmdi.zmdi-delete
+                                                        button.item(data-toggle='tooltip', data-placement='top', title='More')
+                                                            i.zmdi.zmdi-more
+                                // END DATA TABLE
+                        .row.m-t-30
+                            .col-md-12
+                                // DATA TABLE
+                                .table-responsive.m-b-40
+                                    table.table.table-borderless.table-data3
+                                        thead
+                                            tr
+                                                th date
+                                                th type
+                                                th description
+                                                th status
+                                                th price
+                                        tbody
+                                            tr
+                                                td 2018-09-29 05:57
+                                                td Mobile
+                                                td iPhone X 64Gb Grey
+                                                td.process Processed
+                                                td $999.00
+                                            tr
+                                                td 2018-09-28 01:22
+                                                td Mobile
+                                                td Samsung S8 Black
+                                                td.process Processed
+                                                td $756.00
+                                            tr
+                                                td 2018-09-27 02:12
+                                                td Game
+                                                td Game Console Controller
+                                                td.denied Denied
+                                                td $22.00
+                                            tr
+                                                td 2018-09-26 23:06
+                                                td Mobile
+                                                td iPhone X 256Gb Black
+                                                td.denied Denied
+                                                td $1199.00
+                                            tr
+                                                td 2018-09-25 19:03
+                                                td Accessories
+                                                td USB 3.0 Cable
+                                                td.process Processed
+                                                td $10.00
+                                            tr
+                                                td 2018-09-29 05:57
+                                                td Accesories
+                                                td Smartwatch 4.0 LTE Wifi
+                                                td.denied Denied
+                                                td $199.00
+                                            tr
+                                                td 2018-09-24 19:10
+                                                td Camera
+                                                td Camera C430W 4k
+                                                td.process Processed
+                                                td $699.00
+                                            tr
+                                                td 2018-09-22 00:43
+                                                td Computer
+                                                td Macbook Pro Retina 2017
+                                                td.process Processed
+                                                td $10.00
+                                // END DATA TABLE
+                        .row
+                            .col-md-12
+                                .copyright
+                                    p
+                                        | Copyright © 2018 Colorlib. All rights reserved. Template by 
+                                        a(href='https://colorlib.com') Colorlib
+                                        | .

@@ -1,0 +1,82 @@
+include ./datafake.pug
+.bg-wrapper-tras
+.header-top
+    .container-fluid
+        .row.align-items-center.justify-content-between
+            .col-sm-6
+                .header-top-left
+                    h5 FREE SHIPPING FOR ALL ORDERS OF #[span $200.000]
+            .col-sm-6
+                .header-top-right
+                    ul.d-flex.justify-content-end
+                        li
+                            a(href="#") My account
+                        li
+                            a(href="#") Cart
+                        li
+                            a(href="#") Wishlist
+                        li
+                            a(href="#") Checkout
+.container-fluid.wrapper-content
+    .header-content.my-3
+        .row.align-items-center
+            .col-3.col-md-2
+                .logo#logo-header
+                    a(href="./index.html")
+                        img(src="http://103.77.167.144:8596/assets/images/logo.png", alt="logo")
+            .col-md-10.col-9
+                .row
+                    .col-md-3.col-sm-5
+                        a(href="#").help-phone
+                            .icon-help-phone.d-flex
+                                i.fas.fa-phone
+                            .text-help
+                                p Need help?
+                                span (+84) 090 3333 333
+                    .col-md-6#search-box
+                        .row.mx-0.h-100
+                            .col-10.d-flex
+                                .search.d-flex
+                                    input.input-search(type="text" placeholder="search product...")
+                                    button.btn-search
+                                        i.fas.fa-search
+                            .col-2.d-flex.justify-content-center
+                                button#btn-hide-search(onclick='showSearch()')
+                                    <i class="fas fa-times"></i>
+                    .col-md-3.col-sm-6
+                        ul.header-right.h-100
+                            button#btn-show-search.btn-show-search(onclick='hideSearch()')
+                                i.fas.fa-search
+                            li.like
+                                a(href="#").shopping-card_icon
+                                    <i class="fas fa-heart"></i>
+                                    span.text-shopping 2
+                            li.shopping-card
+                                p.shopping-card_icon
+                                    <i class="fas fa-cart-plus"></i>
+                                    span.text-shopping 4
+                                .shopping-card_list
+                                    .shopping-card_list_title
+                                        h2.text-center Danh sách giỏ hàng
+                                    .shopping-card_list_product
+                                        each item in listOfferSupplierItem
+                                            .shopping-card_list_product-item
+                                                .shopping-card_list_product-item-left
+                                                    .shopping-card_list_product-item_img
+                                                        img(src=item.imgInfo)
+                                                    .shopping-card_list_product-item_quatity.px-2
+                                                        p 1
+                                                .shopping-card_list_product-item-right.px-3
+                                                    .shopping-card_list_product-item_info
+                                                        .shopping-card_list_product-item_info_name
+                                                            a(href="#")=item.name
+                                                        .shopping-card_list_product-item_info_price
+                                                            span=item.price
+                                    .shopping-card_list_btn
+                                        a(href="https://techersoft.github.io/ecomerce/dist/html/cart.html")
+                                            button Xem chi tiết
+                            li.sign-in
+                                span $54.000
+            .icon-menu_mobile
+                button.btn-menu_mobile
+                    <i class="fas fa-stream"></i>

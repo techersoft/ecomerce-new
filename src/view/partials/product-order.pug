@@ -1,0 +1,75 @@
+#customer-auction
+    .customer-action_title
+        h2 Thông Tin Đặt Hàng
+    .wrapper-content-customer.px-5.py-3
+        .auction-upload-btn
+            label(for="upload").btn.btn-upload Thêm hình ảnh
+            input(type="file" name="upload" id="upload"  accept="image/*")
+        .auction-upload-image
+            .row.mx-0.my-2
+                .col-4.p-0
+                    img#output(src="https://images.wallpaperscraft.com/image/living_room_dining_room_chairs_table_room_design_7335_1920x1080.jpg", alt="")
+        .aution-form.mt-3
+            form
+                .row.mx-0
+                    .col-12.px-0
+                        .row
+                            .col-lg-4    
+                                .form-group
+                                    label(for="name") Họ và tên
+                                        span.text-red *
+                                    input.form-control(type="text")
+                            .col-lg-4
+                                .form-group
+                                    label(for="phone") Số Điện Thoại
+                                        span.text-red *
+                                    input.form-control(type="number")
+                            .col-lg-4
+                                .form-group
+                                    label(for="phone") Email
+                                    input.form-control(type="number")
+                    .col-12.px-0
+                        .row
+                            .col-lg-4
+                                .form-group
+                                    label(for="amount") Số lượng đặt hàng
+                                    input.form-control(type="number")
+                            .col-lg-4        
+                                .form-group
+                                    label(for="amount") Kích thước
+                                    input.form-control(type="text")
+                            .col-lg-4    
+                                .form-group
+                                    label(for="colors") Màu sắc
+                                    select.form-control
+                                        option Đen
+                                        option Đỏ
+                                        option Cam
+                    .col-12.px-0
+                        .row
+                            .col-lg-4
+                                .form-group
+                                    label(for="amount") Chất liệu
+                                    input.form-control(type="text")
+                            .col-lg-8
+                                .form-group
+                                    label(for="amount") Giá mong muốn
+                                    .row.mx-0
+                                        .col-6.pl-0
+                                            input.form-control(type="number" placeholder="Từ")
+                                        .col-6.pr-0
+                                            input.form-control(type="number" placeholder="Đến")
+                    .w-100
+                        .form-group
+                            label(for="address") Địa chỉ
+                                span.text-red *
+                            input.form-control(type="text")
+                    .w-100
+                        .form-group
+                            label(for="amount") Mô tả
+                            textarea.form-control(name="", cols="30", rows="3")
+                    .form-group.text-right.w-100.mt-3
+                        button.btn.btn-success
+                            a(href="https://techersoft.github.io/ecomerce/dist/html/offer-product.html").text-white  Xác nhận
+                        button.btn.btn-cancel  Hủy bỏ
+                    

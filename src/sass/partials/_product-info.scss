@@ -1,0 +1,169 @@
+.product-info {
+    .item-info {
+        .item-details {
+            .item-name {
+                .name {
+                    font-size: 30px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                .brand {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            .price {
+                .product-body {
+                    margin-bottom: 10px;
+                    span {
+                        &:first-child {
+                            display: inline-block;
+                            min-width: 80px;
+                        }
+                        &:last-child {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .quantity {
+                    margin: 10px 0;
+                    .numberics {
+                        margin: 0 10px;
+                        border: 1px grey solid;
+                        border-radius: 3px;
+                        display: inline-block;
+                        button {
+                            width: 30px;
+                        }
+                        input {
+                            width: 50px;
+                            text-align: center;
+                            margin: 0;
+                        }
+                    }
+
+                }
+                .price {
+                    margin-bottom: 10px;
+                }
+            }
+            .shipping {
+                .title {
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                    span {
+                        margin-left: 20px;
+                    }
+                    margin-bottom: 10px;
+                }
+                .body {
+                    .fast-ship {
+                        display: flex;
+                        align-items: center;
+                        span {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            .shopping {
+                background-color: #4dbc15;
+                color: white;
+                min-width: 150px;
+                padding: 5px;
+                text-align: center;
+                span {
+                    margin-left: 10px;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .tab-wrapper{
+        .tabs {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            border-top: solid 1px #acacac;
+            border-bottom: solid 1px #acacac;
+            margin-bottom: 0;
+            .tab-title {
+                padding: 10px 20px;
+                border-top: 2px #fff solid;
+                a {
+                    font-weight: bold;
+                    color: #bbbbbb;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    transition: color 0.2s ease;
+                }
+            
+            }
+            .active {
+                border-top: 2px black solid;
+                a {
+                    color: #000;
+                }
+            }
+        }
+        .tab-content{
+            padding: 20px;
+            .tab-item-content{
+                display: none;
+                .infor-category {
+                    margin-bottom: 10px;
+                    .header {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin: 10px 0;
+                        font-size: 12px;
+                    }
+                    .content-info {
+                        font-size: 12px;
+                    }
+                    .preservation{
+                        
+                        .preservation-info {
+                            font-size: 12px;
+                        }
+                        &:before {
+                            content: "\f14a";
+                            display: inline-block;
+                            font-family: "Font Awesome 5 Free";
+                            margin-left: -1.3em;
+                            width: 1.3em;
+                        }
+                    }
+                }
+                .table-infor {
+                    border-top: 1px black dashed;
+                    .title {
+                        background-color: #dcdcdc;
+                        font-size: 12px;
+                    }
+                    .infor {
+                        font-size: 12px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .extent {
+        opacity: 0;
+        pointer-events: none;
+        color: #f12525;
+        margin-top: -25px;
+        transition: all .3s ease;
+    }
+    .showExtent {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        margin-top: 0 !important;
+        transition: all .3s ease;
+    }
+}
+

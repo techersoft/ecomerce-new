@@ -1,0 +1,38 @@
+.title-introduce{
+    h3{
+        padding: 20px 0 15px;
+    }
+}
+.text-introduce{
+    padding: 5px 0;
+    font-size: 14px;
+}
+.img-introduce{
+    img{
+        width: 100%;
+        display: block;
+        max-height: 400px;
+    }
+}
+.main-contacts{
+    span{
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+    }
+}
+.title-contact{
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal !important;
+}
+.introduce-info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.text-green{
+    color: rgb(23, 126, 23);
+}

@@ -1,0 +1,75 @@
+include ./datafake.pug
+.wrapper-menu.d-flex.container-fluid.wrapper-content.pd-custom-layout
+    .bg-wrapper
+    include ../partials/side-menu-header.pug
+    .menu-desktop.w-100
+        ul.container-fluid.header-nav-menu.my-0.pd-custom-layoutd-flex.justify-content-between
+            li.header-nav-menu_list
+                a.header-nav-menu_title(href="./index.html") HOME
+            li.header-nav-menu_list
+                a.header-nav-menu_title(href="./index.html") HƯỚNG DẪN TRẢI NGHIỆM
+            li.header-nav-menu_list
+                a.header-nav-menu_title(href="./concept.html") KHÔNG GIAN SỐNG
+                    .header-nav-menu_content
+                        each item in listMenuKgs
+                            .nav-menu_content-box.col-sm-4.mb-3
+                                a(href="./concept.html").item-project
+                                    .item-img
+                                        img.img-responsive(src=item.item)
+                                    .txt-desc.p-3
+                                        p=item.title
+            li.header-nav-menu_list
+                a.header-nav-menu_title(href="./index.html") LOGIN | REGISTER
+.bg-wrapper
+.menu-mobile
+    .wrapper-logo
+        .logo.ml-3
+            a(href="./index.html")
+                img(src="https://st.hzcdn.com/res/4125/pic/houzz_logo.svg?v=4125", alt="Logo")
+        button.btn-close-menu_mobile
+            span.wrapper-close-menu_mobile
+                span.icon-close-menu_mobile
+    .box-item-nav_mobile
+        .widget_title.d-flex.justify-content-between.px-3
+            a(href="#")
+                h6.m-0 HOME
+    .box-item-nav_mobile
+        .widget_title.d-flex.justify-content-between.px-3
+            a(href="#")
+                h6.m-0 DANH MỤC SẢN PHẨM
+            button.btn-show-menu_mobile
+                <i class="fas fa-caret-down"></i>
+        ul.container-fluid.header-nav-menu.px-4
+            each item in listMenu
+                .nav-menu_content-box_mobile.my-2
+                    li.header-nav-menu_title_mobile.d-flex.align-items-center
+                        a(href="./category-product-bed.html")=item.title
+    .box-item-nav_mobile
+        .widget_title.d-flex.justify-content-between.px-3
+            a(href="#")
+                h6.m-0 PHONG CÁCH THIẾT KẾ
+            button.btn-show-menu_mobile
+                <i class="fas fa-caret-down"></i>
+        ul.container-fluid.header-nav-menu.px-4
+            .nav-menu_content-box_mobile.my-2
+                li.header-nav-menu_title_mobile.d-flex.align-items-center
+                    a(href="#") Phong cách scandinavian
+            .nav-menu_content-box_mobile.my-2
+                li.header-nav-menu_title_mobile.d-flex.align-items-center
+                    a(href="#") Phong cách Lagom
+            .nav-menu_content-box_mobile.my-2
+                li.header-nav-menu_title_mobile.d-flex.align-items-center
+                    a(href="#") Phong cách Bohemian
+    .box-item-nav_mobile
+        .widget_title.d-flex.justify-content-between.px-3
+            a(href="#")
+                h6.m-0 TRẢI NGHIỆM KHÔNG GIAN SỐNG
+            button.btn-show-menu_mobile
+                <i class="fas fa-caret-down"></i>
+        ul.container-fluid.header-nav-menu.px-4
+            .nav-menu_content-box_mobile.my-2
+                li.header-nav-menu_title_mobile.d-flex.align-items-center
+                    a(href="#") Dự án
+            .nav-menu_content-box_mobile.my-2
+                li.header-nav-menu_title_mobile.d-flex.align-items-center
+                    a(href="#") Phòng đơn

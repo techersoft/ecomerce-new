@@ -1,0 +1,34 @@
+.pdp-review-progress {
+    display: inline-block;
+    position: relative;
+    width: 138px;
+    height: 12px;
+    .bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .bg{
+        background: #eff0f5;
+    }
+    .fg {
+        background: #faca51;
+    }
+}
+.rating-overview{
+    .score{
+        .average{
+            font-size: 30px;
+        }
+    }
+    .count{
+        .countText{
+            color: #aaa;
+        }
+    }
+}
+.sis-seller-average-ratings{
+    font-size: 13px;
+}

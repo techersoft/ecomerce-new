@@ -1,0 +1,54 @@
+include ../mixins/mixin.pug
+.product-info.container-fluid.mt-5     
+    +productDetail
+    .tab-wrapper
+        ul.container.tabs.px-0
+            li.tab-title
+                a(href="#tab-main-info") mô tả sản phẩm
+            li.tab-title
+                a(href="#tab-specification") thông số kỹ thuật
+            li.tab-title
+                a(href="#tab-preservation") hướng dẫn bảo quản
+        .container.tab-content.px-0
+            .tab-item-content#tab-main-info
+                .infor-category
+                    P.header Sản phẩm đang được cập nhật thông tin
+                    //- .content-info Chất liệu gỗ sồi cứng cáp, khung gỗ chắc, kiểu thiết kế vòm tân cổ điển, màu trắng ngà sạch sẽ và cực kì sang trọng của phong cách Âu châu. Phần nệm úp tối màu, ẩn nút cách điệu cho vẻ quý phái. Thanh giường gỗ uốn cong chịu lực tốt, kết cấu thanh ghép riêng biệt, dễ dàng tách rời lắp đặt. Chân giường cách điệu, cấu hình phối tròn cầu kì tinh xảo. Đem lại một vẻ đẹp mềm mại mà không kém phần sang trọng cho không gian phòng ngủ ấm áp.
+                    //- .content-info Chất liệu này đảm bảo tốt độ cứng cáp, bền, mặt phẳng mềm mại, thoáng mát, dễ thiết kế, sản xuất và thi công, giá cả nhẹ hơn gỗ tự nhiên nhiều. Với bề mặt láng, có vân gỗ nâu toát lên vẻ đẹp sang trọng, hiện đại mà các loại giường nhựa, sắt, inox không đảm bảo được. Ngoài ra chiếc giường ngủ JYSK EDITH còn được bọc một lớp vải chất liệu Polyester bên ngoài tạo cảm giác mềm mại và ấm áp cho người sử dụng.
+                    //- .content-info Những điểm nhấn với tone màu đặc sắc như: Đỏ, vàng cam.. cũng làm cho không gian ngủ thêm phần cá tính và độc đáo.
+                    //- //- .content-info Mặt bàn hình chữ nhật có kích thước tiêu chuẩn, hoàn hảo cho những buổi cà phê trò chuyện hàng ngày của bạn. 
+                    //- P.header CHẤT LIỆU ĐA DẠNG, CAO CẤP
+                    //- .content-info Chất liệu làm nên chiếc bàn là sự kết hợp giữa tính thẩm mĩ và ứng dụng. Với việc dùng những chất liệu cao cấp áp dụng vào ngôn ngữ thiết kế của chiếc bàn cafe TÔT STRUKTUR như: Đá Quartz, thép sơn tĩnh điện và gỗ Veneer. Giúp khách hàng có những lựa chọn đa dạng, sao cho phù hợp với phong cách thiết kế nội thất khác nhau của ngôi nhà. 
+                    //- P.header DỄ DÀNG TRONG BẢO QUẢN
+                    //- .content-info Vật liệu thép được sơn phủ lớp sơn tĩnh điện bền chắc, chống trầy xước, rất an toàn và không gây hại cho sức khỏe. Bề mặt bàn bằng đá quarzt và gỗ Veneer láng mịn và bóng bẩy giúp cho việc lau chùi dễ dàng và không tốn nhiều công sức. 
+            .tab-item-content#tab-specification
+                .table-infor.row.mx-0
+                    .title.col-4 chiều dài (cm)
+                    .infor.col-8 205
+                .table-infor.row.mx-0
+                    .title.col-4 chiều rộng (cm)
+                    .infor.col-8 186
+                .table-infor.row.mx-0
+                    .title.col-4 chiều cao (cm)
+                    .infor.col-8 87
+            .tab-item-content#tab-preservation
+                .infor-category
+                    ul.preservation Bảo quản
+                        li.preservation-info Lau chùi bụi bẩn thường xuyên. Có thể sử dụng nước vệ sinh chuyên dụng. Chú ý những khe hở, góc kẹt của nội thất trong quá trình vệ sinh. Tránh để nước chưa khô, còn tồn đọng gây ẩm mốc.
+                        li.preservation-info Đánh bóng nội thất hàng tuần và ít nhất 3-4/ lần năm.
+                        li.preservation-info Đặt nội thất gỗ công nghiệp tại nơi có ánh sáng vừa đủ, tránh ánh nắng trực tiếp.
+                //- .infor-category
+                //-     ul.preservation Bảo quản nội thất gỗ tự nhiên khỏi ẩm mốc
+                //-         li.preservation-info Gỗ tự nhiên được bảo quản tốt nhất ở độ ẩm từ 45 – 50%. Để tránh trường hợp độ ẩm không khí quá thấp gây hiện tượng tách nứt hay độ ẩm quá cao tạo nấm mốc. Các gia chủ có thể:
+                //-         li.preservation-info Tránh để nội thất gỗ tại những nơi gần nguồn nước, ẩm thấp và có thể dính mưa. 
+                //-         li.preservation-info Chú ý không dùng khăn đẫm nước khi vệ sinh nội thất .
+                //-         li.preservation-info Dùng máy hút ẩm không khí
+                //-         //- li.preservation-info Không quăng bỏ hay kéo lê sản phẩm để tránh gây trầy xước bề mặt.
+                //-         //- li.preservation-info Không dùng những chất tẩy rửa có thành phần acid để tránh ăn mòn.
+                //- .infor-category
+                //-     ul.preservation  Bảo quản đồ gỗ nội thất khỏi trầy xước
+                //-         li.preservation-info Chú ý trong quá trình di chuyển
+                //-         li.preservation-info Không để các đồ vật nặng, vật nhọn lên bề mặt gỗ
+                //-         li.preservation-info Dùng đệm lót dưới, ly, cốc, chén,..
+                //-         li.preservation-info Dùng các loại vải sớ mềm trong quá trình vệ sinh. 
+                //-         li.preservation-info Trong trường hợp trầy xước có thể dùng xi đánh bóng giày.

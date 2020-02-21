@@ -1,0 +1,266 @@
+.concept-layout{
+    display: flex;
+}
+.menu-concept,.menu-offer{
+    position: fixed;
+    right: 0;
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    .left-menu,.right-menu{
+        display: flex;
+        a{
+            padding: 10px 15px;
+            &:hover{
+                i{
+                    color: #333;
+                }
+            }
+        }
+    }
+    .left-menu{
+        a{
+            border-top: 3px solid transparent;
+            &:active,
+            &:focus{
+                background-color: #fff;
+                border-top: 3px solid green;
+                box-shadow: 2px -1px 1px rgba(0,0,0,0.08), -2px -1px 1px rgba(0,0,0,0.08);
+            }
+        }
+    }
+    .right-menu{
+        a{
+            position: relative;
+            height: 100%;
+            &:hover{
+                background-color: #ccc;
+            }
+            span{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                border-radius: 50%;
+                background: #4dbc15;
+                width: 15px;
+                height: 15px;
+                font-size: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+            }
+        }
+        .close{
+            background-color: #222;
+            i{
+                font-size: 18px;
+                &::before{
+                    color: white;
+                }
+            }
+            &:hover{
+                background: #000;
+            }
+        }
+    }
+    .active-concept,.active-offer{
+        background-color: #fff;
+        border-top: 3px solid green !important;
+        box-shadow: 2px -1px 1px rgba(0,0,0,0.08), -2px -1px 1px rgba(0,0,0,0.08);
+    }
+}
+.concept-info-area{
+    width: 420px;
+    background-color: #fff;
+    -webkit-transition: right .3s ease-out;
+    transition: right .3s ease-out;
+    border-left: 1px solid #e6e6e6;
+    height: 100vh;
+    a{
+        color: #333333;
+        text-decoration: none;
+        &:hover{
+            color: #3d8901;
+        }
+    }
+}
+.concept-img-area{
+    width: calc(100% - 420px);
+    min-height: 250px;
+    height: 100%;
+    -webkit-transition: width .25s ease-out,height .25s ease-out;
+    transition: width .25s ease-out,height .25s ease-out;
+}
+.concept-content-box,.offer-content-box{
+    border-bottom: 1px solid #e6e6e6;
+}
+.offer-content-space-owner,.concept-content-space-owner{
+    display: flex;
+    align-items: center;
+}
+.offer-content-space-owner_info-avatar,.concept-content-space-owner_info-avatar{
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.concept-content-space-owner_info{
+    
+}
+.space-owner_info-details_name{
+    line-height: 18px;
+}
+$stars: 5;
+$star-size: 18px;
+$star-on-color: #F9DF4A;
+$star-off-color: #CCCCCC;
+.space-owner_info-details_rating_icon{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    .checked{
+        color: rgb(255, 190, 40);
+    }
+}
+.space-info_title{
+    h2{
+        font-size: 18px;
+    }
+    .space-title__line{
+        display: block;
+    }
+    .space-title__line-sub{
+        font-size: 14px;
+        color: #888;
+    }
+}
+.space-facets_content{
+    display: flex;
+    li{
+        &:after{
+            padding: 0 7px 0 7px;
+            content: "|";
+            color: #8f8f8f;
+        }
+        &:last-child{
+            &:after{
+                content: '';
+            }
+        }
+        .more-icon{
+            &:before{
+                content: ">";
+                padding-left: 5px;
+            }
+        }
+    }
+}
+.concept_title{
+    h2{
+        font-size: 14px;
+    }
+}
+.text-green{
+    color: #2d9b00 !important;
+    &:hover,&:focus{
+        color: #268200 !important;
+    }
+}
+.concept-content-box{
+    .box-img{
+        img{
+            max-width: 75px;
+            max-height: 75px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.space-rel-prod_photo_img{
+    .space-price{
+        span{
+            font-size: 14px;
+        }
+    }
+    .box-img{
+        .img_responsive{
+            position: relative;
+            &:hover{
+                &:before{
+                    opacity: 1;
+                    pointer-events: auto;
+                    transition: all .3s ease;
+                }
+            }
+            &:before{
+                content: 'Xem ngay';
+                color: #fff;
+                display: flex;
+                font-size: 14px;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                font-weight: bold;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(113, 112, 112, 0.678);
+                opacity: 0;
+                pointer-events: none;
+                transition: all .3s ease;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                max-width: 95px;
+                max-height: 95px;
+            }
+        }
+
+    }
+}
+.grid-reponsive-custom{
+    width: 20%;
+}
+.btn-cmt-quest{
+    border: 1px solid #cccccc;
+    color: #4c4c4c;
+    background-color: #fafafa;
+    display: block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover,&:focus{
+        outline: none;
+        background-color:#e7e7e7;
+    }
+}
+.concept-info-area{
+    overflow-y: auto;
+}
+.notification-cmt-quest{
+    span{
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+}

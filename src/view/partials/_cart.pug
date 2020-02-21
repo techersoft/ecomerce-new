@@ -1,0 +1,52 @@
+include datafake.pug
+.wrapper_cart.container-fluid.px-3
+    .title_cart
+        h2 Giỏ Hàng
+            span.pl-2='(Có '+ listOfferSupplierItem.length +' sản phẩm)'
+    .content_cart
+        .row
+            .col-lg-8.col-xl-9.mt-3
+                each item in listOfferSupplierItem
+                    .product-item_cart
+                        .box-item_cart
+                            .img-item_cart
+                                img(src=item.imgInfo)
+                            .box-info-item_cart
+                                .row.m-0
+                                    .col-sm-8
+                                        .info-item_cart
+                                            .title-item_cart
+                                                a(href="#")
+                                                    h2=item.name
+                                            .delivery-item_cart
+                                                <i class="fas fa-truck"></i>
+                                                p Giao hàng trong 4 ngày
+                                            .provided-item_cart
+                                                p Cung cấp bởi
+                                                    a.pl-1(href="#")=item.nameSupplier
+                                            .function-item_cart.d-flex.mt-1
+                                                button.btn-delete-item_cart.mr-4 Xóa
+                                                a(href="#") Xem thêm các sản phẩm khác
+                                    .col-sm-4
+                                        .price-item_cart.text-right
+                                            p.current-price-item_cart=item.priceSale + 'đ'
+                                            .sale-off-item_cart
+                                                strike=item.price + 'đ'
+                                                span.percent-item_cart=item.percent + '%'
+                                            .amount-item_cart.d-flex.justify-content-end.mt-2
+                                                span.amount-box.d-flex.align-items-center
+                                                    button( data-multi="-1").handle-amount -
+                                                    input(type="text" value="1").amount-number
+                                                    button( data-multi="1").handle-amount +
+                                                
+            .col-lg-4.mt-3.col-xl-3
+                .total-price_cart
+                    .total-price_top.d-flex.justify-content-between.p-3
+                        p Tạm tính:
+                        p 6.050.000đ
+                    .total-price_main.d-flex.justify-content-between.p-3
+                        p Thành tiền:
+                        strong.d-block.text-right.text-red 6.050.000đ
+                            span.d-block (Đã bao gồm VAT nếu có)
+                .btn-order.mt-2.text-right
+                    button.btn_order Tiến hành đặt hàng

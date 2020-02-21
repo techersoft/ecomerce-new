@@ -1,0 +1,121 @@
+include datafake.pug
+.wrapper-offer-supplier
+    .offer-content-box.p-2.position-relative
+        h3 Danh sách nhà cung cấp
+        .offer-cancel
+            a.close(href="./index.html") <i class="fas fa-home"></i>
+    .btn-auction.px-3.pt-3.text-right
+        button Đấu giá
+    .offer-content-box.px-3.pt-3.pb-0.offer-order
+        .box-list-order.box-list-order-hover#btn-popup-dongnhan
+            .img-list
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png", alt="")
+                .price
+                    span Giá : #[span 9,500,000 đ]
+        .box-list-order.my-2.box-list-order-hover#btn-popup-relax
+            .img-list
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/10/25/relax-art-1571993027.png", alt="")
+                .price
+                    span Giá : #[span 9,500,000 đ]
+        .box-list-order.my-2.box-list-order-hover#btn-popup-furnist
+            .img-list
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png", alt="")
+                .price
+                    span Giá : #[span 9,500,000 đ]
+    .offer-content-box.px-3.pt-3
+        .offer-content-space-rel-prod#tag
+            .concept_title
+                h2 Sản phẩm liên quan
+            .space-rel-prod_photo
+                .space-rel-prod_photo_img.my-2
+                    .row.m-0
+                        each item in listImgConceptProduct
+                            .box-img.px-1.mb-2.col-3
+                                a(href=item.href)
+                                    .img_responsive
+                                        img(src=item.src)
+                                    .space-price.text-center.d-block
+                                        span=item.price
+    .offer-content-box.px-3.pt-3
+        .offer-content-comment-question#question
+            .concept_title
+                h2 Câu hỏi về bức ảnh này (25)
+            .comment-question.my-3
+                .btn-cmt-quest
+                    button.btn_cmt-quest Hỏi Đáp
+                .notification-cmt-quest.my-1
+                    span Có bất kì câu hỏi nào về ảnh? Nhắn tin hỏi tại đây.
+    .btn-close-menu-offer
+        span Đóng
+
+
+#popup-dongnhan.d-none
+    .bg-popup
+    .popup-control
+        .btn-cancel-popup#btn-cancel-popup-dongnhan X
+        .box-list-order
+            .img-list.custom-img
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order.img-order-custom
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png", alt="")
+                .price.ml-1
+                    span Giá : #[span 9,500,000 đ]
+        .describe
+            h5 Mô tả : 
+            span Phòng ngủ cao cấp đầy đủ tiện nghi, với cách trang trí hiện đại phù hợp với những người khó ngủ.
+        .btn-group-control
+            button.btn-deal.btn.btn-success Deal
+            button.btn-call.btn.btn-primary Call
+            button.btn-chat.btn.btn-dark Chat
+    
+
+#popup-relax.d-none
+    .bg-popup
+    .popup-control
+        .btn-cancel-popup#btn-cancel-popup-relax X
+        .box-list-order
+            .img-list.custom-img
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order.img-order-custom
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/10/25/relax-art-1571993027.png", alt="")
+                .price.ml-1
+                    span Giá : #[span 9,500,000 đ]
+        .describe
+            h5 Mô tả : 
+            span Phòng ngủ cao cấp đầy đủ tiện nghi, với cách trang trí hiện đại phù hợp với những người khó ngủ.
+        .btn-group-control
+            button.btn-deal.btn.btn-success Deal
+            button.btn-call.btn.btn-primary Call
+            button.btn-chat.btn.btn-dark Chat
+
+
+#popup-furnist.d-none
+    .bg-popup
+    .popup-control
+        .btn-cancel-popup#btn-cancel-popup-furnist X
+        .box-list-order
+            .img-list.custom-img
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order.img-order-custom
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png", alt="")
+                .price.ml-1
+                    span Giá : #[span 9,500,000 đ]
+        .describe
+            h5 Mô tả : 
+            span Phòng ngủ cao cấp đầy đủ tiện nghi, với cách trang trí hiện đại phù hợp với những người khó ngủ.
+        .btn-group-control
+            button.btn-deal.btn.btn-success Deal
+            button.btn-call.btn.btn-primary Call
+            button.btn-chat.btn.btn-dark Chat

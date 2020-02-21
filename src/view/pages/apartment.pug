@@ -1,0 +1,17 @@
+extends ../layouts/layout.pug
+block main-content
+    .layout-content
+        section#header
+            include ./../partials/header.pug
+            include ./../partials/navigation.pug
+        section#cart.mt-3
+            .container-fluid.pd-custom-layout.my-3
+                .row
+                    .col-md-9
+                        include ./../partials/apartment.pug
+                    .col-md-3
+                        include ./../partials/form-search-apartment.pug
+                    include ./../partials/location-apartment.pug
+                    include ./../partials/apartment-related.pug
+        section#footer
+            include ./../partials/footer.pug

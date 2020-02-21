@@ -1,0 +1,21 @@
+extends ../layouts/layout.pug
+block main-content
+    .layout-content
+        section#header
+            include ./../partials/header.pug
+            include ./../partials/navigation.pug
+        main#main-content.bg-deepgrey
+            .container-fluid.mt-3
+            
+                .store-product-menu.my-3
+                    .store-product-menu_content
+                        ul.d-flex
+                            li
+                                a(href="#") Trang Chủ
+                            li
+                                a(href="#") Tất cả sản phẩm 
+                            li.active
+                                a(href="#") Hồ sơ
+                include ./../partials/store-product_profile
+        section#footer
+            include ./../partials/footer.pug

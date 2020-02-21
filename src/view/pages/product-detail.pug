@@ -1,0 +1,18 @@
+extends ../layouts/layout.pug
+block main-content
+    .layout-content
+        section#header
+            include ./../partials/header.pug
+            include ./../partials/navigation.pug
+        main#main-content
+            .container-fluid.pd-custom-layout
+                .item-detail
+                    include ./../partials/product-info.pug
+                .product-list
+                        .product-list-title.d-flex.justify-content-between.align-items-center.mb-2
+                            h3.px-0 Sản phẩm liên quan
+                            a.read-more(href="#") Xem thêm 
+                                i.fas.fa-chevron-right
+                        include ./../partials/list-product-category.pug
+        section#footer.mt-5
+            include ./../partials/footer.pug

@@ -1,0 +1,20 @@
+.sale-tickets {
+    // margin-top: 10px;
+    hr {
+        width: 90%;
+        display: block;
+        margin: auto;
+        padding: 10px;
+    }
+    .ticket-content {
+        img {
+            width: 100%;
+        }
+    }
+    &:last-child {
+       padding-right: 0; 
+    }
+    &:first-child {
+        padding-left: 0; 
+     }
+}

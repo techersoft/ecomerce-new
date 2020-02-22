@@ -281,6 +281,14 @@
         -moz-transition: all .3s ease;
     }
 }
+
+@media only screen and (max-width:1200px){
+    .header-nav-menu_content{
+        width: calc(100% - 80px);
+        margin-left: 65px;
+    }
+}
+
 @media only screen and (max-width:992px){
     .nav-menu_content-box{
         width: 25%;
@@ -288,16 +296,7 @@
     .header-nav-menu_list{
         padding: 10px 15px;
     }
-}
-@media only screen and (max-width:767px){
     .menu-desktop{
         display: none;
-        pointer-events: none;
-    }
-}
-@media only screen and (max-width:1200px){
-    .header-nav-menu_content{
-        width: calc(100% - 80px);
-        margin-left: 65px;
     }
 }

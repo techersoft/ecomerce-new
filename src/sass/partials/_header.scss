@@ -262,6 +262,29 @@
 .show{
     display: block !important;
 }
+
+.icon-menu_mobile{
+    display: none;
+    position: absolute;
+    right: 15px;
+}
+.fixed-header{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 4px 0 #c5c3c3;
+    transition: all .3s ease;
+    z-index: 7;
+}
+
+@media(max-width: 992px){
+    .icon-menu_mobile{
+        display: block;
+        position: absolute;
+        right: 15px;
+        bottom: 5px;
+    }
+}
 @media(max-width: 768px){
     .btn-show-search,
     #btn-hide-search{
@@ -288,20 +311,15 @@
             }
         }
     }
+    .wrapper-header{
+        padding-right: 15px !important;
+    }
+    .icon-menu_mobile{
+        position: absolute;
+        bottom: auto;
+    }
 }
-.icon-menu_mobile{
-    display: none;
-    position: absolute;
-    right: 15px;
-}
-.fixed-header{
-    position: fixed;
-    background: #fff;
-    width: 100%;
-    box-shadow: 0 1px 4px 0 #c5c3c3;
-    transition: all .3s ease;
-    z-index: 7;
-}
+
 
 @media(max-width: 576px){
     .help-phone{
@@ -337,13 +355,3 @@
     }
 }
 
-
-@media only screen and (max-width: 768px){
-    .wrapper-header{
-        padding-right: 15px !important;
-    }
-    .icon-menu_mobile{
-        display: flex;
-        justify-content: center;
-    }
-}

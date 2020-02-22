@@ -4988,6 +4988,14 @@ input {
 .btn-link-custom {
   background-color: red; }
 
+.btn-link-info {
+  background-color: #328cdf; }
+
+.text-banner-product-custom {
+  top: 50%;
+  position: absolute;
+  right: 50px; }
+
 .hd-text {
   width: 90%;
   margin: auto;

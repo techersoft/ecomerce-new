@@ -276,13 +276,28 @@
     transition: all .3s ease;
     z-index: 7;
 }
-
+@media only screen and (max-width:1200px){
+    .header-nav-menu{
+        font-size: 15px;
+        white-space: nowrap;
+        .header-nav-menu_list{
+            padding: 10px 15px;
+            .header-nav-menu_content{
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
 @media(max-width: 992px){
     .icon-menu_mobile{
         display: block;
         position: absolute;
         right: 15px;
         bottom: 5px;
+    }
+    .text-help{
+        font-size: 13px !important;
     }
 }
 @media(max-width: 768px){

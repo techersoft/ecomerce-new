@@ -54,7 +54,7 @@
 .header-nav-menu_content{
     position: absolute;
     left: 0;
-    top: 46px;
+    top: 45px;
     width: 100%;
     background: #fff;
     border: 1px solid #eee;
@@ -297,6 +297,6 @@
         padding: 10px 15px;
     }
     .menu-desktop{
-        display: none;
+        display: none !important;
     }
 }

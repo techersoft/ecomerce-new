@@ -35,14 +35,14 @@ include ./datafake.pug
                                 span (+84) 090 3333 333
                     .col-md-6#search-box
                         .row.mx-0.h-100
-                            .col-10.d-flex
+                            .col-12.d-flex.px-0
                                 .search.d-flex
                                     input.input-search(type="text" placeholder="search product...")
                                     button.btn-search
                                         i.fas.fa-search
-                            .col-2.d-flex.justify-content-center
-                                button#btn-hide-search(onclick='showSearch()')
-                                    <i class="fas fa-times"></i>
+                            //- .col-1.d-flex.justify-content-center.px-0
+                            //-     button#btn-hide-search(onclick='showSearch()')
+                            //-         <i class="fas fa-times"></i>
                     .col-md-3.col-sm-6
                         ul.header-right.h-100
                             button#btn-show-search.btn-show-search(onclick='hideSearch()')

@@ -1,0 +1,79 @@
+.product-content
+    .container-fluid.wrapper-content
+        .banner-list.my-2
+            include ./banner-index-2.pug
+        .my-3
+            include ./banner-product-content-2.pug
+        .my-3
+            include ./service.pug
+        .my-3
+            include ./banner-product-content.pug
+        .my-2
+            .img-hd
+                .hd-text
+                    h2
+                        .row.ic-text
+                            i.fas.fa-star.text-white
+                            span.text-white Sản phẩm khuyến mãi
+                            i.fas.fa-star.text-white
+        .my-2
+            .product-item-list
+                include ./product-heart.pug
+
+        #banner-product.custom-banner
+            .banner-product
+                .row
+                    .col-md-4.my-2
+                        .box-banner-product
+                            .img-banner-product
+                                img(src="https://xuongmocgocongnghiep.com/upload/slider/xuongmocgocongnghiep.jpg", alt="")
+                    .col-md-4.my-2
+                        .box-banner-product
+                            .img-banner-product
+                                img(src="https://xuongmocgocongnghiep.com/upload/slider/xuongmocgocongnghiep.jpg", alt="")
+                    .col-md-4.my-2
+                        .box-banner-product
+                            .img-banner-product
+                                img(src="https://xuongmocgocongnghiep.com/upload/slider/xuongmocgocongnghiep.jpg", alt="")
+
+        .my-2
+            .img-hd
+                .hd-text
+                    h2
+                        .row.ic-text
+                            i.fas.fa-star.text-white
+                            span.text-white Sản phẩm bán chạy
+                            i.fas.fa-star.text-white
+
+        .my-2
+            include ./product-heart-new.pug
+
+        .my-2
+            .img-hd
+                .hd-text
+                    h2
+                        .row.ic-text
+                            i.fas.fa-star.text-white
+                            span.text-white Sản phẩm mới
+                            i.fas.fa-star.text-white
+        .my-2
+            include ./product-heart-new.pug
+
+        .my-2
+            .img-hd
+                .hd-text
+                    h2
+                        .row.ic-text
+                            i.fas.fa-star.text-white
+                            span.text-white Sản phẩm đã xem
+                            i.fas.fa-star.text-white
+        .my-2
+            include ./product-heart-new.pug
+
+.container-fluid
+    include ./carousel-banner.pug
+
+.bg-white.py-4
+    .container-fluid.wrapper-content
+        .my-2
+            include ./hot-keyword.pug

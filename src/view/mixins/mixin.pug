@@ -10,9 +10,9 @@ mixin breadcumb(loc1, loc2, loc3, loc4)
 
 mixin productDetail
     #product-detail
-        .row.mx-0.mt-3.mb-4
-            .col-md-6.col-lg-7.px-0
-                .product-view.pr-md-5
+        .row.mt-3.mb-4
+            .col-md-6.col-lg-7
+                .product-view
                     .view-thumbs
                         #productViewCarousel
                             .thumbs-item
@@ -21,22 +21,26 @@ mixin productDetail
                                 img.thumbs-img(src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/07/23/jysk-bed-favrbo3qr-1563854161.jpg")
                             .thumbs-item
                                 img.thumbs-img(src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/07/23/jysk-bed-favrbo3ql-1563854161.jpg")
-                            //- .thumbs-item
-                            //-     img.thumbs-img(src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/10/21/jysk-bed-vedde0051-1571632223.jpg")
+                            .thumbs-item
+                                img.thumbs-img(src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/10/21/jysk-bed-vedde0051-1571632223.jpg")
                     .view-media.ml-4
-                        .view-image-wrapper
+                        .view-image-wrapper.position-relative
+                            .product-item-badges
+                                span.discount -20%
+                                span.status.unlike.cursor-pointer
+                                    i.far.fa-heart
                             img#media-image(src="", alt="" data-zoom-image="")
 
-            .col-md-6.col-lg-5.px-0
+            .col-md-6.col-lg-5
                 .product-info
                         .product-heading
-                            h1.product-title Giường đôi Favrbo
-                            .row.mx-0   
-                                p.col-6.p-0.text-left.product-brand Thương hiệu: relaxart
-                                p.col-6.p-0.text-right.product-code Mã số: 00099012381
+                            .product-price.d-flex.justify-content-arround.align-items-center
+                                p.mr-2.current-price 23,672,000 VND
+                                p.mr-2.old-price 29,590,000 VND
+                            h3.product-info-title Giường đôi Favrbo
+                            
                         .product-price.py-3
                             p.m-0
-                                span.current-price.mr-3 12,900,000 đ
                                 span.product-stars-rating
                                     span.active
                                         i.fas.fa-star
@@ -48,13 +52,14 @@ mixin productDetail
                                         i.fas.fa-star
                                     span
                                         i.fas.fa-star
+                        .product-location.my-2 Hồ Chí Minh
                             //- p.m-0
                                 //- span.discount-price
                                 //-     span.mr-2 Tiết kiệm:
                                 //-     span.mr-2.text-danger.font-weight-bold 10%
                                 //-     span (890,000)
                                 //- span.ml-2.normal-price Giá tiêu chuẩn: 8,900,000 đ
-                        .product-desc.py-3
+                        .product-desc.py-2
                             .product-prop
                                 span.prop-title Loại:
                                 span Giường đôi
@@ -62,8 +67,8 @@ mixin productDetail
                                 span.prop-title Màu sắc:
                                 span.prop-colors.d-flex
                                     span.nude.active
-                                    //- span.nude
-                                    //- span.white
+                                    span.nude
+                                    span.white
                             .product-prop
                                 span.prop-title Chất liệu: 
                                 span Gỗ công nghiệp
@@ -80,33 +85,28 @@ mixin productDetail
                                 button.add-to-cart.mr-5
                                     i.fas.fa-cart-plus.mr-2
                                     span Chọn mua
-                                span
-                                    span.status.unlike.cursor-pointer
-                                        i.fas.fa-heart
-                        .py-3.product-delivery
-                            .row.mx-0 
-                                .col-8.p-0.text-left
-                                    span.mr-2
-                                        i.fas.fa-truck
-                                    span Giao hàng tiêu chuẩn dự kiến từ 1 đến 3 ngày
-                                    p.ml-4.my-0 Sản phẩm chỉ giao tại TP.HCM
-                                .col-4.text-right.p-0
-                                    a(href="#")
-                                        span.mr-2
-                                            i.fas.fa-share-alt
-                                        span.text-uppercase Chia sẻ  
-                        .product-policy.py-3
-                            h3.font-weight-bold Chính sách và các nội dung liên quan
-                            #viewToggle.read-less
-                                p
-                                    span.font-weight-bold.mr-2 1. Bảo hành:
-                                    span 24 tháng
-                                span.font-weight-bold 2. Chính sách đổi trả:
-                                ul.ml-4.my-3
-                                    li Nếu sản phẩm không nguyên mới, nguyên vẹn và không đúng chất lượng của nhà sản xuất, quý khách vui lòng thông báo trong 48 giờ kể từ thời điểm nhận hàng. Thời gian thực hiện việc đổi trả sẽ từ 07 - 14 ngày kể từ ngày nhận hàng.
-                                    li Có thể đổi trả trong vòng 7 ngày kể từ ngày nhận hàng nếu sản phẩm: bị lỗi do nhà sản xuất / được giao không đúng với đơn đặt hàng.
-                                    li Điều kiện: Sản phẩm phải còn nguyên vẹn , không trầy xước và còn tem của Relax Art. Khách hàng phải có hóa đơn hoặc phiếu bảo hành của Relax Art .
-                            button.control-content Xem thêm
+                                
+                        .py-2.product-delivery
+                            .text-left
+                                span.mr-2
+                                    i.fas.fa-truck.bg-icon-green
+                                span Giao hàng tiêu chuẩn dự kiến từ 1 đến 3 ngày
+                                p.ml-4.my-0.text-green Sản phẩm tại khu vực TP.HCM
+                            .text-left
+                                span.mr-2
+                                    i.fas.fa-truck.bg-icon-red
+                                span Giao hàng miễn phí với những đơn hàng lớn hơn
+                                p.ml-4.my-0.text-red $200.000
+                        .social-icon
+                            .icon.d-flex.icon-contacts-detail
+                                a(href="#")
+                                    <i class="fab fa-facebook mr-2"></i>
+                                a(href="#")
+                                    <i class="fab fa-twitter-square mr-2"></i>
+                                a(href="#")
+                                    <i class="fab fa-linkedin mr-2"></i>
+                                a(href="#")
+                                    <i class="fab fa-instagram mr-2"></i>
 
 
 mixin productItem

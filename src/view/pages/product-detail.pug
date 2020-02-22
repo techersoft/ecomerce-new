@@ -5,14 +5,12 @@ block main-content
             include ./../partials/header.pug
             include ./../partials/navigation.pug
         main#main-content
-            .container-fluid.pd-custom-layout
+            .container-fluid
                 .item-detail
                     include ./../partials/product-info.pug
                 .product-list
                         .product-list-title.d-flex.justify-content-between.align-items-center.mb-2
                             h3.px-0 Sản phẩm liên quan
-                            a.read-more(href="#") Xem thêm 
-                                i.fas.fa-chevron-right
-                        include ./../partials/list-product-category.pug
+                        include ./../partials/list-product-detail.pug
         section#footer.mt-5
             include ./../partials/footer.pug

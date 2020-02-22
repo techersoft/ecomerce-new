@@ -86,8 +86,6 @@
         .tabs {
             overflow: hidden;
             display: flex;
-            justify-content: center;
-            border-top: solid 1px #acacac;
             border-bottom: solid 1px #acacac;
             margin-bottom: 0;
             .tab-title {
@@ -103,7 +101,7 @@
             
             }
             .active {
-                border-top: 2px black solid;
+                border-bottom: 2px black solid;
                 a {
                     color: #000;
                 }

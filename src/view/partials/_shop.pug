@@ -1,0 +1,399 @@
+.container-fluid
+    .content-shop.my-3
+        .title-inside-page.my-3
+            .d-flex.align-items-center
+                a.info-outside(href="") HOME
+                .icon-inside.px-2
+                    <i class="fas fa-chevron-right"></i>
+                a.info-inside(href="") FURNIST
+        .content-shop_main.d-flex
+            .content-shop_main_left
+                .shop_main-box
+                    button.btn-close-menu_shop
+                        <i class="fas fa-times"></i>
+                    .shop_main_items
+                        .shop_main_title
+                            p FILTER BY PRICE
+                        .shop_main_content
+                            .range-slider
+                                input.doubleslider(value='0', min='20', max='100', step='1', type='range')
+                                input.doubleslider(value='100', min='20', max='100', step='1', type='range')
+                                span.medium-16 Price: 
+                                    span.rangeValues
+                                button(type="submit" class="btn-filter-range") Filter
+                    .shop_main_items
+                        .shop_main_title
+                            p PRODUCT CATEGORIES
+                        .shop_main_content
+                            ul.nav-category.my-3
+                                li.nav-category_info
+                                    p.title-nav-category.m-0(href="#") Tủ trang trí
+                                        <i class="fas fa-chevron-right"></i>
+                                    ul.sub_nav-category
+                                        li.sub-info_nav-category
+                                            a(href="#") Tủ 1
+                                        li.sub-info_nav-category
+                                            a(href="#") Tủ 2
+                                        li.sub-info_nav-category
+                                            a(href="#") Tủ 3
+                                li.nav-category_info
+                                    p.title-nav-category.m-0(href="#") Tủ ngăn kéo
+                                        <i class="fas fa-chevron-right"></i>
+                                    ul.sub_nav-category
+                                        li.sub-info_nav-category
+                                            a(href="#") Tủ 1
+                                        li.sub-info_nav-category
+                                            a(href="#") Tủ 2
+                                        li.sub-info_nav-category
+                                            a(href="#") Tủ 3
+                                li.nav-category_info
+                                    p.title-nav-category.m-0(href="#") Tủ quần áo
+                                        <i class="fas fa-chevron-right"></i>
+                                    ul.sub_nav-category
+                                        li.sub-info_nav-category
+                                            a(href="#") Tủ 1
+                                        li.sub-info_nav-category
+                                            a(href="#") Tủ 2
+                                        li.sub-info_nav-category
+                                            a(href="#") Tủ 3
+                                li.nav-category_info
+                                    a(href="#").title-nav-category.m-0 Tủ giày
+                                li.nav-category_info
+                                    a(href="#").title-nav-category.m-0 Tủ bếp
+                                li.nav-category_info
+                                    a(href="#").title-nav-category.m-0 Tủ đầu giường
+                    .shop_main_items
+                        .shop_main_title
+                            p COLOR
+                        .shop_main_content
+                            .box-btn-color.my-3
+                                button.btn-color.mx-1.bg-red
+                                button.btn-color.mx-1.bg-turquoise
+                                button.btn-color.mx-1.bg-green
+                                button.btn-color.mx-1.bg-purple
+                                button.btn-color.mx-1.bg-deepgrey
+                                button.btn-color.mx-1.bg-turquoise2
+                    .shop_main_items
+                        .shop_main_title
+                            p PRODUCT TAGS
+                        .shop_main_content
+                            .box-tags.my-3
+                                a.tags-info.mx-1(href="#") Tags 1
+                                a.tags-info.mx-1(href="#") Tags 2
+                                a.tags-info.mx-1(href="#") Tags 3
+                                a.tags-info.mx-1(href="#") Tagsss 4
+                                a.tags-info.mx-1(href="#") Tags 5
+                                a.tags-info.mx-1(href="#") Tags 6
+                                a.tags-info.mx-1(href="#") Tags 7
+                    .shop_main_items
+                        .shop_main_title
+                            p RECENTS
+                        .shop_main_content
+                            include _favourite-product-only-item.pug
+                    .shop_main_items
+                        #banner
+                            .banner.position-relative(style="height: 350px")
+                                .img-banner-center.h-100.d-flex
+                                    img(src="https://st.hzcdn.com/simgs/c2a1ff100a83762a_16-7675/eclectic-living-room.jpg", alt="")
+                                .text-banner-center
+                                        .title-banner
+                                            h6 Thiết kế
+                                        .text-content
+                                            span HOME
+                                        .btn-banner-center
+                                            a.btn-link-banner(href="#") Shop now
+            .content-shop_main_right
+                .shop_main_right_banner
+                    .shop_main_right_banner_img
+                        img(src="../../dist/assets/Image64.png")
+                    .shop_main_right_content.my-3
+                        .shop_main_right_content_header.row.justify-content-between.align-items-center
+                            .col-sm-6.col-lg-2.mb-2
+                                .shop_main_right_content_header_btn.d-flex.align-items-center
+                                    button.btn-grid
+                                        img(src="../../dist/assets/icon-grid.png")
+                                    button.btn-list.mx-2
+                                        <i class="fas fa-list-ul"></i>
+                            .col-sm-6.col-lg-5.mb-2
+                                .shop_main_right_content_header_title.d-flex.align-items-center.justify-content-end
+                                    p.m-0 Showing 1-9 (of 30 results)
+                            .col-lg-5.mb-2
+                                .shop_main_right_content_header_sorting.d-flex.align-items-center.justify-content-end
+                                    p.m-0.px-2 Short by: 
+                                    .select
+                                        select()
+                                            option(selected='', disabled='') Default sorting
+                                            option(value='1') Pure CSS
+                                            option(value='2') No JS
+                                            option(value='3') Nice!
+                        .shop_main_right_content_main
+                            .product-list-slider
+                                .row
+                                    .col-sm-6.col-md-6.col-lg-4.my-3   
+                                        .product-item.bg-white
+                                                .product-item-header
+                                                    .product-item-badges
+                                                        span.selling-tag Top #[span 1]
+                                                        span.status.unlike.cursor-pointer
+                                                            i.far.fa-heart
+                                                    a.product-item-image(href='./product-detail-1.html')
+                                                        img(src='https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg', alt='Product Image')
+                                                .product-item-body.mt-1
+                                                    .product-item-info.px-3.py-2.text-center
+                                                        .product-price.d-flex.justify-content-center.align-items-center
+                                                            p.mr-2.current-price 23,672,000 VND
+                                                            p.mr-2.old-price 29,590,000 VND
+                                                        a.cursor-pointer(href='#')
+                                                            h3.product-info-title.my-2 Ghế Thư Giãn Barcelona
+                                                            .product-stars-rating.my-2
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span.count-rating (30)
+                                    .col-sm-6.col-md-6.col-lg-4.my-3   
+                                        .product-item.bg-white
+                                                .product-item-header
+                                                    .product-item-badges
+                                                        span.selling-tag Top #[span 1]
+                                                        span.status.unlike.cursor-pointer
+                                                            i.far.fa-heart
+                                                    a.product-item-image(href='./product-detail-1.html')
+                                                        img(src='https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg', alt='Product Image')
+                                                .product-item-body.mt-1
+                                                    .product-item-info.px-3.py-2.text-center
+                                                        .product-price.d-flex.justify-content-center.align-items-center
+                                                            p.mr-2.current-price 23,672,000 VND
+                                                            p.mr-2.old-price 29,590,000 VND
+                                                        a.cursor-pointer(href='#')
+                                                            h3.product-info-title.my-2 Ghế Thư Giãn Barcelona
+                                                            .product-stars-rating.my-2
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span.count-rating (30)
+                                    .col-sm-6.col-md-6.col-lg-4.my-3   
+                                        .product-item.bg-white
+                                                .product-item-header
+                                                    .product-item-badges
+                                                        span.selling-tag Top #[span 1]
+                                                        span.status.unlike.cursor-pointer
+                                                            i.far.fa-heart
+                                                    a.product-item-image(href='./product-detail-1.html')
+                                                        img(src='https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg', alt='Product Image')
+                                                .product-item-body.mt-1
+                                                    .product-item-info.px-3.py-2.text-center
+                                                        .product-price.d-flex.justify-content-center.align-items-center
+                                                            p.mr-2.current-price 23,672,000 VND
+                                                            p.mr-2.old-price 29,590,000 VND
+                                                        a.cursor-pointer(href='#')
+                                                            h3.product-info-title.my-2 Ghế Thư Giãn Barcelona
+                                                            .product-stars-rating.my-2
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span.count-rating (30)                            
+                                    .col-sm-6.col-md-6.col-lg-4.my-3   
+                                        .product-item.bg-white
+                                                .product-item-header
+                                                    .product-item-badges
+                                                        span.selling-tag Top #[span 1]
+                                                        span.status.unlike.cursor-pointer
+                                                            i.far.fa-heart
+                                                    a.product-item-image(href='./product-detail-1.html')
+                                                        img(src='https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg', alt='Product Image')
+                                                .product-item-body.mt-1
+                                                    .product-item-info.px-3.py-2.text-center
+                                                        .product-price.d-flex.justify-content-center.align-items-center
+                                                            p.mr-2.current-price 23,672,000 VND
+                                                            p.mr-2.old-price 29,590,000 VND
+                                                        a.cursor-pointer(href='#')
+                                                            h3.product-info-title.my-2 Ghế Thư Giãn Barcelona
+                                                            .product-stars-rating.my-2
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span.count-rating (30)
+                                    .col-sm-6.col-md-6.col-lg-4.my-3   
+                                        .product-item.bg-white
+                                                .product-item-header
+                                                    .product-item-badges
+                                                        span.selling-tag Top #[span 1]
+                                                        span.status.unlike.cursor-pointer
+                                                            i.far.fa-heart
+                                                    a.product-item-image(href='./product-detail-1.html')
+                                                        img(src='https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg', alt='Product Image')
+                                                .product-item-body.mt-1
+                                                    .product-item-info.px-3.py-2.text-center
+                                                        .product-price.d-flex.justify-content-center.align-items-center
+                                                            p.mr-2.current-price 23,672,000 VND
+                                                            p.mr-2.old-price 29,590,000 VND
+                                                        a.cursor-pointer(href='#')
+                                                            h3.product-info-title.my-2 Ghế Thư Giãn Barcelona
+                                                            .product-stars-rating.my-2
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span.count-rating (30)
+                                    .col-sm-6.col-md-6.col-lg-4.my-3   
+                                        .product-item.bg-white
+                                                .product-item-header
+                                                    .product-item-badges
+                                                        span.selling-tag Top #[span 1]
+                                                        span.status.unlike.cursor-pointer
+                                                            i.far.fa-heart
+                                                    a.product-item-image(href='./product-detail-1.html')
+                                                        img(src='https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg', alt='Product Image')
+                                                .product-item-body.mt-1
+                                                    .product-item-info.px-3.py-2.text-center
+                                                        .product-price.d-flex.justify-content-center.align-items-center
+                                                            p.mr-2.current-price 23,672,000 VND
+                                                            p.mr-2.old-price 29,590,000 VND
+                                                        a.cursor-pointer(href='#')
+                                                            h3.product-info-title.my-2 Ghế Thư Giãn Barcelona
+                                                            .product-stars-rating.my-2
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span.count-rating (30)                            
+                                    .col-sm-6.col-md-6.col-lg-4.my-3   
+                                        .product-item.bg-white
+                                                .product-item-header
+                                                    .product-item-badges
+                                                        span.selling-tag Top #[span 1]
+                                                        span.status.unlike.cursor-pointer
+                                                            i.far.fa-heart
+                                                    a.product-item-image(href='./product-detail-1.html')
+                                                        img(src='https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg', alt='Product Image')
+                                                .product-item-body.mt-1
+                                                    .product-item-info.px-3.py-2.text-center
+                                                        .product-price.d-flex.justify-content-center.align-items-center
+                                                            p.mr-2.current-price 23,672,000 VND
+                                                            p.mr-2.old-price 29,590,000 VND
+                                                        a.cursor-pointer(href='#')
+                                                            h3.product-info-title.my-2 Ghế Thư Giãn Barcelona
+                                                            .product-stars-rating.my-2
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span.count-rating (30)
+                                    .col-sm-6.col-md-6.col-lg-4.my-3   
+                                        .product-item.bg-white
+                                                .product-item-header
+                                                    .product-item-badges
+                                                        span.selling-tag Top #[span 1]
+                                                        span.status.unlike.cursor-pointer
+                                                            i.far.fa-heart
+                                                    a.product-item-image(href='./product-detail-1.html')
+                                                        img(src='https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg', alt='Product Image')
+                                                .product-item-body.mt-1
+                                                    .product-item-info.px-3.py-2.text-center
+                                                        .product-price.d-flex.justify-content-center.align-items-center
+                                                            p.mr-2.current-price 23,672,000 VND
+                                                            p.mr-2.old-price 29,590,000 VND
+                                                        a.cursor-pointer(href='#')
+                                                            h3.product-info-title.my-2 Ghế Thư Giãn Barcelona
+                                                            .product-stars-rating.my-2
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span.count-rating (30)
+                                    .col-sm-6.col-md-6.col-lg-4.my-3   
+                                        .product-item.bg-white
+                                                .product-item-header
+                                                    .product-item-badges
+                                                        span.selling-tag Top #[span 1]
+                                                        span.status.unlike.cursor-pointer
+                                                            i.far.fa-heart
+                                                    a.product-item-image(href='./product-detail-1.html')
+                                                        img(src='https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg', alt='Product Image')
+                                                .product-item-body.mt-1
+                                                    .product-item-info.px-3.py-2.text-center
+                                                        .product-price.d-flex.justify-content-center.align-items-center
+                                                            p.mr-2.current-price 23,672,000 VND
+                                                            p.mr-2.old-price 29,590,000 VND
+                                                        a.cursor-pointer(href='#')
+                                                            h3.product-info-title.my-2 Ghế Thư Giãn Barcelona
+                                                            .product-stars-rating.my-2
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span.active
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span
+                                                                    i.fas.fa-star
+                                                                span.count-rating (30)                            
+                            .shop_main_right_content_pagination.d-flex.justify-content-center
+                                ul
+                                    li
+                                        a.active(href="#") 1
+                                    li
+                                        a(href="#") 2
+                                    li
+                                        a(href="#") 3
+                                    li
+                                        a(href="#") 4
+                                    li
+                                        a(href="#") 5
+                                    li
+                                        a(href="#") last
+button.btn-sidemenu
+    <i class="fas fa-caret-square-right"></i>

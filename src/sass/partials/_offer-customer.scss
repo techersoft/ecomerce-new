@@ -50,7 +50,51 @@ background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, F
         min-height: 150px;
     }
 }
-
+.customer-action_title{
+    color: #666;
+    padding: 10px 0;
+    h5{
+        font-size: 24px;
+    }
+    
+}
+.form-left{
+    border-top: 1px solid #f1f1f1;
+}
+.form-right{
+    background: #f1f1f1;
+    .customer-action_title{
+        h5{
+            font-weight: 400;
+            color: #666;
+            border-bottom: 1px solid rgb(218, 214, 214);
+        }
+    }
+}
+.btn-accept{
+    background: #4c7bff;
+    color: #fff;
+    transition: all .3s ease;
+    &:hover,&:focus{
+        filter: brightness(1.1);
+        color: #fff;
+        transition: all .3s ease;
+    }
+}
+.form-info{
+    input{
+        border: 1px solid rgb(218, 214, 214) !important;
+        width: 100%;
+        padding: 0 15px;
+        margin: 10px 0;
+        border-radius: 4px;
+        background: #fff;
+    }
+    label{
+        width: 100%;
+        margin: 0;
+    }
+}
 .offer-cancel{
     width: 45px;
     height: 45px;

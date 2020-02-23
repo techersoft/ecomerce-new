@@ -1,6 +1,11 @@
 $blue: blue;
 $red: red;
 $white : white;
+$green : rgb(8, 247, 60);
+$purple : rgb(240, 45, 214);
+$turquoise : rgb(8, 239, 247);
+$turquoise2 : rgb(5, 222, 230);
+$gray : rgb(181, 201, 202);
 // TEXTs
 
 $text-colors: () !default;
@@ -21,8 +26,16 @@ $deepgrey : #f4f4f4;
 
 $bg-color: () !default;
 $bg-color: map-merge((
-    "bg-green": lighten($blue,10%),
-    "bg-deepgrey": $deepgrey
+    // "bg-green": lighten($blue,10%),
+    "bg-deepgrey": $deepgrey,
+    "bg-blue": $blue,
+    "bg-red": $red,
+    "bg-white": $white,
+    "bg-green": $green ,
+    "bg-purple": $purple,
+    "bg-turquoise": $turquoise,
+    "bg-turquoise2": $turquoise2,
+    "bg-gray": $gray
 ), $bg-color);
 
 @each $name,$color in $bg-color{

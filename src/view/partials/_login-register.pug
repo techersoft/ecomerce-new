@@ -1,0 +1,73 @@
+.container-fluid
+    .title-inside-page.my-3
+            .d-flex.align-items-center
+                a.info-outside(href="") HOME
+                .icon-inside.px-2
+                    <i class="fas fa-chevron-right"></i>
+                a.info-inside(href="") LOGIN/REGISTER
+    .form-login-register
+        .row
+            .col-md-6
+                .form_login-register.form-login.p-3
+                    .form-title
+                        h5 LOGIN
+                    .row
+                        .col-12
+                            .form-info
+                                label(for="email-address") Email address *
+                                input(type="text")
+                        .col-12
+                            .form-info
+                                label(for="email-address") Password *
+                                .input-password
+                                    input(type="password" id="password")
+                                    <i class="fas fa-eye-slash" id="eye"></i>
+                        .col-12
+                            .d-flex.align-items-center.justify-content-between
+                                .form-info.d-flex.align-items-center
+                                    input(type="checkbox" style="width: auto")
+                                    label.px-2(for="checkbox" style="width: auto") Remember me
+                                a(href="#") Forgot password
+                    .w-100
+                        button.btn.btn-accept.w-100.py-1.px-3.my-3(type="submit") Login
+                    .w-100.text-center
+                        p Or login with
+                        .social-icon
+                            .icon.d-flex.justify-content-center
+                                <i class="fab fa-facebook mr-2"></i>
+                                <i class="fab fa-twitter-square mr-2"></i>
+                                <i class="fab fa-linkedin mr-2"></i>
+                                <i class="fab fa-instagram mr-2"></i>
+            .col-md-6
+                .form_login-register.form-register.p-3
+                    .form-title
+                        h5 REGISTER
+                    .row
+                        .col-md-6
+                            .form-info
+                                label(for="firstname") First name *
+                                input(type="text")
+                        .col-md-6
+                            .form-info
+                                label(for="lastname") Last name *
+                                input(type="text")
+                        .col-12
+                            .form-info
+                                label(for="email-address") Email address *
+                                input(type="text")
+                        .col-md-6
+                            .form-info
+                                label(for="password") Password *
+                                .input-password
+                                    input(type="password" id="password1")
+                                    <i class="fas fa-eye-slash" id="eye1"></i>
+                        .col-md-6
+                            .form-info
+                                label(for="confirm-password") Confirm password *
+                                .input-password
+                                    input(type="password" id="password2")
+                                    <i class="fas fa-eye-slash" id="eye2"></i>
+                    .w-100
+                        button.btn.btn-cancel.w-100.py-1.px-3.my-3(type="submit") Register
+
+

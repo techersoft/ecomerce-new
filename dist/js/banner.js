@@ -1,6 +1,24 @@
 "use strict";
 
 $(document).ready(function () {
+  $('.owl-carousel-concept').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    items: 3,
+    autoplay: false,
+    autoplayTimeout: 9000,
+    smartSpeed: 750,
+    responsive: {
+      0: {
+        items: 2
+      },
+      500: {
+        items: 3
+      }
+    }
+  });
   $('.owl-carousel-trademark').owlCarousel({
     loop: true,
     margin: 10,

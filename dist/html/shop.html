@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title><link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/styles.css"/>
+  </head>
+  <body>
+    <div class="layout-content">
+      <section id="header">
+        <div class="bg-wrapper-tras"></div>
+        <div class="header-top">
+          <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-sm-6">
+                <div class="header-top-left">
+                  <h5>FREE SHIPPING FOR ALL ORDERS OF <span>$200.000</span></h5>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="header-top-right">
+                  <ul class="d-flex justify-content-end">
+                    <li><a href="./login.html">My account</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Checkout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid wrapper-content">
+          <div class="header-content my-3">
+            <div class="row align-items-center">
+              <div class="col-3 col-md-2">
+                <div class="logo" id="logo-header"><a href="./index.html"><img src="http://103.77.167.144:8596/assets/images/logo.png" alt="logo"/></a></div>
+              </div>
+              <div class="col-md-10 col-9">
+                <div class="row">
+                  <div class="col-md-3 col-sm-5"><a class="help-phone" href="#">
+                      <div class="icon-help-phone d-flex"><i class="fas fa-phone"></i></div>
+                      <div class="text-help">
+                        <p>Need help?</p><span>(+84) 090 3333 333</span>
+                      </div></a></div>
+                  <div class="col-md-6" id="search-box">
+                    <div class="row mx-0 h-100">
+                      <div class="col-12 d-flex px-0">
+                        <div class="search d-flex">
+                          <input class="input-search" type="text" placeholder="search product..."/>
+                          <button class="btn-search"><i class="fas fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <ul class="header-right h-100">
+                      <button class="btn-show-search" id="btn-show-search" onclick="hideSearch()"><i class="fas fa-search"></i></button>
+                      <li class="like"><a class="shopping-card_icon" href="#"><i class="fas fa-heart"></i><span class="text-shopping">2</span></a></li>
+                      <li class="shopping-card">
+                        <p class="shopping-card_icon"><i class="fas fa-cart-plus"></i><span class="text-shopping">4</span></p>
+                        <div class="shopping-card_list">
+                          <div class="shopping-card_list_title">
+                            <h2 class="text-center">Danh sách giỏ hàng</h2>
+                          </div>
+                          <div class="shopping-card_list_product">
+                            <div class="shopping-card_list_product-item">
+                              <div class="shopping-card_list_product-item-left">
+                                <div class="shopping-card_list_product-item_img"><img src="https://salaciadecor.com/wp-content/uploads/2019/05/ban-tra-go-tu-nhien.jpg2_-1021x1024.jpg"/></div>
+                                <div class="shopping-card_list_product-item_quatity px-2">
+                                  <p>1</p>
+                                </div>
+                              </div>
+                              <div class="shopping-card_list_product-item-right px-3">
+                                <div class="shopping-card_list_product-item_info">
+                                  <div class="shopping-card_list_product-item_info_name"><a href="#">Bàn gỗ tròn</a></div>
+                                  <div class="shopping-card_list_product-item_info_price"><span>7.000.000</span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shopping-card_list_product-item">
+                              <div class="shopping-card_list_product-item-left">
+                                <div class="shopping-card_list_product-item_img"><img src="http://kientrucdsd.com/admincp/db/uploads/149612896510.jpg"/></div>
+                                <div class="shopping-card_list_product-item_quatity px-2">
+                                  <p>1</p>
+                                </div>
+                              </div>
+                              <div class="shopping-card_list_product-item-right px-3">
+                                <div class="shopping-card_list_product-item_info">
+                                  <div class="shopping-card_list_product-item_info_name"><a href="#">Bàn Ăn Gỗ Sồi</a></div>
+                                  <div class="shopping-card_list_product-item_info_price"><span>1.500.000</span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shopping-card_list_product-item">
+                              <div class="shopping-card_list_product-item-left">
+                                <div class="shopping-card_list_product-item_img"><img src="http://product.hstatic.net/1000208812/product/upload_60f1764c63614dc9908c88965212a412_master.jpg"/></div>
+                                <div class="shopping-card_list_product-item_quatity px-2">
+                                  <p>1</p>
+                                </div>
+                              </div>
+                              <div class="shopping-card_list_product-item-right px-3">
+                                <div class="shopping-card_list_product-item_info">
+                                  <div class="shopping-card_list_product-item_info_name"><a href="#">Bàn Tròn Nhỏ</a></div>
+                                  <div class="shopping-card_list_product-item_info_price"><span>500.000</span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shopping-card_list_product-item">
+                              <div class="shopping-card_list_product-item-left">
+                                <div class="shopping-card_list_product-item_img"><img src="https://bizweb.dktcdn.net/100/215/341/files/72803428-1176787489180861-580959971064152064-n.jpg?v=1572242632886"/></div>
+                                <div class="shopping-card_list_product-item_quatity px-2">
+                                  <p>1</p>
+                                </div>
+                              </div>
+                              <div class="shopping-card_list_product-item-right px-3">
+                                <div class="shopping-card_list_product-item_info">
+                                  <div class="shopping-card_list_product-item_info_name"><a href="#">Bàn Gỗ Phong Thủy</a></div>
+                                  <div class="shopping-card_list_product-item_info_price"><span>2.800.000</span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shopping-card_list_btn"><a href="./cart.html">
+                              <button>Xem chi tiết</button></a></div>
+                        </div>
+                      </li>
+                      <li class="sign-in"><span>$54.000</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="icon-menu_mobile">
+                <button class="btn-menu_mobile"><i class="fas fa-stream"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-menu d-flex container-fluid wrapper-content">
+          <div class="bg-wrapper"></div>
+          <div id="sidebar">
+            <div class="sidebar-menu side-menu-header">
+              <div class="control-side-menu d-flex align-items-center"><i class="fas fa-list"></i><span>All department</span></div>
+              <ul class="sub-menu-content">
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><span>
+                       <i class="fas fa-bed"></i></span>
+                    <p class="text-side-menu">Giường</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Giường tầng</a></li>
+                    <li><a href="./categories.html">Giường hộc kéo</a></li>
+                    <li><a href="./categories.html">Giường đôi</a></li>
+                    <li><a href="./categories.html">Giường đơn</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><img src="../../dist/assets/icon/015-cabinet.png" alt=""/>
+                    <p class="text-side-menu">Tủ</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Tủ trang trí</a></li>
+                    <li><a href="./categories.html">Tủ ngăn kéo</a></li>
+                    <li><a href="./categories.html">Tủ quần áo</a></li>
+                    <li><a href="./categories.html">Tủ giày</a></li>
+                    <li><a href="./categories.html">Tủ bếp</a></li>
+                    <li><a href="./categories.html">Tủ đầu giường</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><img src="../../dist/assets/icon/022-desk.png" alt=""/>
+                    <p class="text-side-menu">Bàn</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Bàn làm việc</a></li>
+                    <li><a href="./categories.html">Bàn ăn</a></li>
+                    <li><a href="./categories.html">Bàn bar</a></li>
+                    <li><a href="./categories.html">Bàn trang trí</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><img src="../../dist/assets/icon/018-chair.png" alt=""/>
+                    <p class="text-side-menu">Ghế</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Ghế làm việc</a></li>
+                    <li><a href="./categories.html">Ghế thư giãn</a></li>
+                    <li><a href="./categories.html">Ghế bar</a></li>
+                    <li><a href="./categories.html">Ghế ăn</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><img src="../../dist/assets/icon/030-sofa.png" alt=""/>
+                    <p class="text-side-menu">Sofa đơn</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Ghế đôn/Ghế lười</a></li>
+                    <li><a href="./categories.html">Ghế băng</a></li>
+                    <li><a href="./categories.html">Ghế đọc sách</a></li>
+                    <li><a href="./categories.html">Ghế bành</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><img src="../../dist/assets/icon/030-sofa.png" alt=""/>
+                    <p class="text-side-menu">Sofa</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Sofa góc</a></li>
+                    <li><a href="./categories.html">Sofa giường</a></li>
+                    <li><a href="./categories.html">Sofa 3 chỗ</a></li>
+                    <li><a href="./categories.html">Sofa 2 chỗ</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><img src="../../dist/assets/icon/table-coffe-hd.png" alt=""/>
+                    <p class="text-side-menu">Bàn cafe</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Bàn trang trí</a></li>
+                    <li><a href="./categories.html">Bàn góc</a></li>
+                    <li><a href="./categories.html">Bàn cafe</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><img src="../../dist/assets/icon/027-desk.png" alt=""/>
+                    <p class="text-side-menu">Kệ</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Kệ treo tường</a></li>
+                    <li><a href="./categories.html">Kệ sách</a></li>
+                    <li><a href="./categories.html">Kệ tivi</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><img src="../../dist/assets/icon/028-modern-chair.png" alt=""/>
+                    <p class="text-side-menu">Phụ kiện</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Gối</a></li>
+                    <li><a href="./categories.html">Nệm</a></li>
+                    <li><a href="./categories.html">Khăn</a></li>
+                    <li><a href="./categories.html">Thảm</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="d-flex align-items-center menu-icon-btn"><span>
+                       <i class="fas fa-holly-berry"></i></span>
+                    <p class="text-side-menu">Trang trí</p><span class="menu-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <ul class="sub-menu-sidebar">
+                    <li><a href="./categories.html">Tranh</a></li>
+                    <li><a href="./categories.html">Lọ trang trí</a></li>
+                    <li><a href="./categories.html">Cây trang trí</a></li>
+                    <li><a href="./categories.html">Đồng hồ</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-desktop w-100 d-flex">
+            <ul class="container-fluid header-nav-menu my-0 d-flex justify-content-between">
+              <li class="header-nav-menu_list"><a class="header-nav-menu_title" href="./index.html">HOME</a></li>
+              <li class="header-nav-menu_list"><a class="header-nav-menu_title" href="./index.html">HƯỚNG DẪN TRẢI NGHIỆM</a></li>
+              <li class="header-nav-menu_list"><a class="header-nav-menu_title" href="./concept.html">KHÔNG GIAN SỐNG</a>
+                <ul class="header-nav-menu_content">
+                  <li> <a href="./concept.html">Chung cư</a></li>
+                  <li> <a href="./concept.html">Phòng trọ</a></li>
+                </ul>
+              </li>
+              <li class="header-nav-menu_list"><a class="header-nav-menu_title" href="./product-order.html">ĐẶT HÀNG THEO MẪU</a></li>
+              <li class="header-nav-menu_list"><a class="header-nav-menu_title" href="./login.html">LOGIN </a><span> | </span><a class="header-nav-menu_title" href="./register.html">REGISTER</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-wrapper"></div>
+        <div class="menu-mobile">
+          <div class="wrapper-logo py-4">
+            <button class="btn-close-menu_mobile"><span class="wrapper-close-menu_mobile"><span class="icon-close-menu_mobile"></span></span></button>
+          </div>
+          <div class="box-item-nav_mobile">
+            <div class="widget_title d-flex justify-content-between px-3"><a href="./index.html">
+                <h6 class="m-0">HOME</h6></a></div>
+          </div>
+          <div class="box-item-nav_mobile">
+            <div class="widget_title d-flex justify-content-between px-3"><a href="./index.html">
+                <h6 class="m-0">HƯỚNG DẪN TRẢI NGHIỆM</h6></a></div>
+          </div>
+          <div class="box-item-nav_mobile">
+            <div class="widget_title d-flex justify-content-between px-3"><a href="./concept.html">
+                <h6 class="m-0">KHÔNG GIAN SỐNG</h6></a>
+              <button class="btn-show-menu_mobile"><i class="fas fa-caret-down"></i></button>
+            </div>
+            <ul class="container-fluid header-nav-menu px-4">
+              <div class="nav-menu_content-box_mobile my-2">
+                <li class="header-nav-menu_title_mobile d-flex align-items-center"><a href="./concept.html">Chung cư</a></li>
+              </div>
+              <div class="nav-menu_content-box_mobile my-2">
+                <li class="header-nav-menu_title_mobile d-flex align-items-center"><a href="./concept.html">Phòng trọ</a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="box-item-nav_mobile">
+            <div class="widget_title d-flex justify-content-between px-3"><a href="./product-order.html">
+                <h6 class="m-0">ĐẶT HÀNG THEO MẪU</h6></a></div>
+          </div>
+          <div class="box-item-nav_mobile">
+            <div class="widget_title d-flex px-3"><a href="./login.html">
+                <h6 class="m-0">LOGIN  </h6></a><span class="mx-1">|  </span><a href="./register.html">
+                <h6 class="m-0"> REGISTER</h6></a></div>
+          </div>
+        </div>
+      </section>
+      <main id="main-content">
+        <div class="container-fluid">
+          <div class="content-shop my-3">
+            <div class="title-inside-page my-3">
+              <div class="d-flex align-items-center"><a class="info-outside" href="./index.html">HOME</a>
+                <div class="icon-inside px-2"><i class="fas fa-chevron-right"></i></div><a class="info-inside" href="./shop.html">FURNIST</a>
+              </div>
+            </div>
+            <div class="content-shop_main d-flex">
+              <div class="content-shop_main_left">
+                <div class="shop_main-box">
+                  <button class="btn-close-menu_shop"><i class="fas fa-times"></i></button>
+                  <div class="shop_main_items">
+                    <div class="shop_main_title">
+                      <p>FILTER BY PRICE</p>
+                    </div>
+                    <div class="shop_main_content">
+                      <div class="range-slider">
+                        <input class="doubleslider" value="0" min="20" max="100" step="1" type="range"/>
+                        <input class="doubleslider" value="100" min="20" max="100" step="1" type="range"/><span class="medium-16">Price: <span class="rangeValues"></span></span>
+                        <button class="btn-filter-range" type="submit">Filter</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shop_main_items">
+                    <div class="shop_main_title">
+                      <p>PRODUCT CATEGORIES</p>
+                    </div>
+                    <div class="shop_main_content">
+                      <ul class="nav-category my-3">
+                        <li class="nav-category_info">
+                          <p class="title-nav-category m-0" href="./shop.html">
+                            Tủ trang trí<i class="fas fa-chevron-right"></i></p>
+                          <ul class="sub_nav-category">
+                            <li class="sub-info_nav-category"><a href="./shop.html">Tủ 1</a></li>
+                            <li class="sub-info_nav-category"><a href="./shop.html">Tủ 2</a></li>
+                            <li class="sub-info_nav-category"><a href="./shop.html">Tủ 3</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-category_info">
+                          <p class="title-nav-category m-0" href="./shop.html">
+                            Tủ ngăn kéo<i class="fas fa-chevron-right"></i></p>
+                          <ul class="sub_nav-category">
+                            <li class="sub-info_nav-category"><a href="./shop.html">Tủ 1</a></li>
+                            <li class="sub-info_nav-category"><a href="./shop.html">Tủ 2</a></li>
+                            <li class="sub-info_nav-category"><a href="./shop.html">Tủ 3</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-category_info">
+                          <p class="title-nav-category m-0" href="./shop.html">
+                            Tủ quần áo<i class="fas fa-chevron-right"></i></p>
+                          <ul class="sub_nav-category">
+                            <li class="sub-info_nav-category"><a href="./shop.html">Tủ 1</a></li>
+                            <li class="sub-info_nav-category"><a href="./shop.html">Tủ 2</a></li>
+                            <li class="sub-info_nav-category"><a href="./shop.html">Tủ 3</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-category_info"><a class="title-nav-category m-0" href="./shop.html">Tủ giày</a></li>
+                        <li class="nav-category_info"><a class="title-nav-category m-0" href="./shop.html">Tủ bếp</a></li>
+                        <li class="nav-category_info"><a class="title-nav-category m-0" href="./shop.html">Tủ đầu giường</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="shop_main_items">
+                    <div class="shop_main_title">
+                      <p>COLOR</p>
+                    </div>
+                    <div class="shop_main_content">
+                      <div class="box-btn-color my-3">
+                        <button class="btn-color mx-1 bg-red"></button>
+                        <button class="btn-color mx-1 bg-turquoise"></button>
+                        <button class="btn-color mx-1 bg-green"></button>
+                        <button class="btn-color mx-1 bg-purple"></button>
+                        <button class="btn-color mx-1 bg-deepgrey"></button>
+                        <button class="btn-color mx-1 bg-turquoise2"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shop_main_items">
+                    <div class="shop_main_title">
+                      <p>PRODUCT TAGS</p>
+                    </div>
+                    <div class="shop_main_content">
+                      <div class="box-tags my-3"><a class="tags-info mx-1" href="#">Tags 1</a><a class="tags-info mx-1" href="#">Tags 2</a><a class="tags-info mx-1" href="#">Tags 3</a><a class="tags-info mx-1" href="#">Tags 4</a><a class="tags-info mx-1" href="#">Tags 5</a><a class="tags-info mx-1" href="#">Tags 6</a><a class="tags-info mx-1" href="#">Tags 7</a></div>
+                    </div>
+                  </div>
+                  <div class="shop_main_items">
+                    <div class="shop_main_title">
+                      <p>RECENTS</p>
+                    </div>
+                    <div class="shop_main_content">
+                      <div id="favourite-product">
+                        <div class="favourite-product">
+                          <div class="box-favourite">
+                            <div class="product-favourite my-3"><a href="./product-detail.html">
+                                <div class="row">
+                                  <div class="col-4">
+                                    <div class="img-favourite"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></div>
+                                  </div>
+                                  <div class="col-8 d-flex align-items-center">
+                                    <div class="product-item-info">
+                                      <div class="product-price d-flex justify-content-arround align-items-center">
+                                        <p class="current-price">2,372,000 VND</p>
+                                      </div>
+                                      <div class="cursor-pointer">
+                                        <h6 class="product-info-title">Ghế thư giãn barcelona</h6>
+                                        <div class="product-stars-rating"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
+                            <div class="product-favourite my-3"><a href="./product-detail.html">
+                                <div class="row">
+                                  <div class="col-4">
+                                    <div class="img-favourite"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></div>
+                                  </div>
+                                  <div class="col-8 d-flex align-items-center">
+                                    <div class="product-item-info">
+                                      <div class="product-price d-flex justify-content-arround align-items-center">
+                                        <p class="current-price">2,372,000 VND</p>
+                                      </div>
+                                      <div class="cursor-pointer">
+                                        <h6 class="product-info-title">Ghế thư giãn barcelona</h6>
+                                        <div class="product-stars-rating"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
+                            <div class="product-favourite my-3"><a href="./product-detail.html">
+                                <div class="row">
+                                  <div class="col-4">
+                                    <div class="img-favourite"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></div>
+                                  </div>
+                                  <div class="col-8 d-flex align-items-center">
+                                    <div class="product-item-info">
+                                      <div class="product-price d-flex justify-content-arround align-items-center">
+                                        <p class="current-price">2,372,000 VND</p>
+                                      </div>
+                                      <div class="cursor-pointer">
+                                        <h6 class="product-info-title">Ghế thư giãn barcelona</h6>
+                                        <div class="product-stars-rating"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
+                            <div class="product-favourite my-3"><a href="./product-detail.html">
+                                <div class="row">
+                                  <div class="col-4">
+                                    <div class="img-favourite"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></div>
+                                  </div>
+                                  <div class="col-8 d-flex align-items-center">
+                                    <div class="product-item-info">
+                                      <div class="product-price d-flex justify-content-arround align-items-center">
+                                        <p class="current-price">2,372,000 VND</p>
+                                      </div>
+                                      <div class="cursor-pointer">
+                                        <h6 class="product-info-title">Ghế thư giãn barcelona</h6>
+                                        <div class="product-stars-rating"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shop_main_items">
+                    <div id="banner">
+                      <div class="banner position-relative" style="height: 350px">
+                        <div class="img-banner-center h-100 d-flex"><img src="https://st.hzcdn.com/simgs/c2a1ff100a83762a_16-7675/eclectic-living-room.jpg" alt=""/></div>
+                        <div class="text-banner-center">
+                          <div class="title-banner">
+                            <h6>Thiết kế</h6>
+                          </div>
+                          <div class="text-content"><span>HOME</span></div>
+                          <div class="btn-banner-center"><a class="btn-link-banner" href="./shop.html">Shop now</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-shop_main_right">
+                <div class="shop_main_right_banner">
+                  <div class="shop_main_right_banner_img"><img src="../../dist/assets/Image64.png"/></div>
+                  <div class="shop_main_right_content my-3">
+                    <div class="shop_main_right_content_header row justify-content-between align-items-center">
+                      <div class="col-sm-6 col-lg-2 mb-2">
+                        <div class="shop_main_right_content_header_btn d-flex align-items-center">
+                          <button class="btn-grid"><img src="../../dist/assets/icon-grid.png"/></button>
+                          <button class="btn-list mx-2"><i class="fas fa-list-ul"></i></button>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-5 mb-2">
+                        <div class="shop_main_right_content_header_title d-flex align-items-center justify-content-end">
+                          <p class="m-0">Showing 1-9 (of 30 results)</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 mb-2">
+                        <div class="shop_main_right_content_header_sorting d-flex align-items-center justify-content-end">
+                          <p class="m-0 px-2">Short by: </p>
+                          <div class="select">
+                            <select>
+                              <option selected="" disabled="">Default sorting</option>
+                              <option value="1">Pure CSS</option>
+                              <option value="2">No JS</option>
+                              <option value="3">Nice!</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="shop_main_right_content_main">
+                      <div class="product-list-slider">
+                        <div class="row">
+                          <div class="col-sm-6 col-md-6 col-lg-4 my-3">  
+                            <div class="product-item bg-white">
+                              <div class="product-item-header">
+                                <div class="product-item-badges"><span class="selling-tag">Top <span>1</span></span><span class="status unlike cursor-pointer"><i class="far fa-heart"></i></span></div><a class="product-item-image" href="./product-detail.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></a>
+                              </div>
+                              <div class="product-item-body mt-1">
+                                <div class="product-item-info px-3 py-2 text-center">
+                                  <div class="product-price d-flex justify-content-center align-items-center">
+                                    <p class="mr-2 current-price">23,672,000 VND</p>
+                                    <p class="mr-2 old-price">29,590,000 VND</p>
+                                  </div><a class="cursor-pointer" href="./product-detail.html">
+                                    <h3 class="product-info-title my-2">Ghế Thư Giãn Barcelona</h3>
+                                    <div class="product-stars-rating my-2"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)</span></div></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-lg-4 my-3">  
+                            <div class="product-item bg-white">
+                              <div class="product-item-header">
+                                <div class="product-item-badges"><span class="selling-tag">Top <span>1</span></span><span class="status unlike cursor-pointer"><i class="far fa-heart"></i></span></div><a class="product-item-image" href="./product-detail.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></a>
+                              </div>
+                              <div class="product-item-body mt-1">
+                                <div class="product-item-info px-3 py-2 text-center">
+                                  <div class="product-price d-flex justify-content-center align-items-center">
+                                    <p class="mr-2 current-price">23,672,000 VND</p>
+                                    <p class="mr-2 old-price">29,590,000 VND</p>
+                                  </div><a class="cursor-pointer" href="./product-detail.html">
+                                    <h3 class="product-info-title my-2">Ghế Thư Giãn Barcelona</h3>
+                                    <div class="product-stars-rating my-2"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)</span></div></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-lg-4 my-3">  
+                            <div class="product-item bg-white">
+                              <div class="product-item-header">
+                                <div class="product-item-badges"><span class="selling-tag">Top <span>1</span></span><span class="status unlike cursor-pointer"><i class="far fa-heart"></i></span></div><a class="product-item-image" href="./product-detail.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></a>
+                              </div>
+                              <div class="product-item-body mt-1">
+                                <div class="product-item-info px-3 py-2 text-center">
+                                  <div class="product-price d-flex justify-content-center align-items-center">
+                                    <p class="mr-2 current-price">23,672,000 VND</p>
+                                    <p class="mr-2 old-price">29,590,000 VND</p>
+                                  </div><a class="cursor-pointer" href="./product-detail.html">
+                                    <h3 class="product-info-title my-2">Ghế Thư Giãn Barcelona</h3>
+                                    <div class="product-stars-rating my-2"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)                            </span></div></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-lg-4 my-3">  
+                            <div class="product-item bg-white">
+                              <div class="product-item-header">
+                                <div class="product-item-badges"><span class="selling-tag">Top <span>1</span></span><span class="status unlike cursor-pointer"><i class="far fa-heart"></i></span></div><a class="product-item-image" href="./product-detail.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></a>
+                              </div>
+                              <div class="product-item-body mt-1">
+                                <div class="product-item-info px-3 py-2 text-center">
+                                  <div class="product-price d-flex justify-content-center align-items-center">
+                                    <p class="mr-2 current-price">23,672,000 VND</p>
+                                    <p class="mr-2 old-price">29,590,000 VND</p>
+                                  </div><a class="cursor-pointer" href="./product-detail.html">
+                                    <h3 class="product-info-title my-2">Ghế Thư Giãn Barcelona</h3>
+                                    <div class="product-stars-rating my-2"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)</span></div></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-lg-4 my-3">  
+                            <div class="product-item bg-white">
+                              <div class="product-item-header">
+                                <div class="product-item-badges"><span class="selling-tag">Top <span>1</span></span><span class="status unlike cursor-pointer"><i class="far fa-heart"></i></span></div><a class="product-item-image" href="./product-detail.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></a>
+                              </div>
+                              <div class="product-item-body mt-1">
+                                <div class="product-item-info px-3 py-2 text-center">
+                                  <div class="product-price d-flex justify-content-center align-items-center">
+                                    <p class="mr-2 current-price">23,672,000 VND</p>
+                                    <p class="mr-2 old-price">29,590,000 VND</p>
+                                  </div><a class="cursor-pointer" href="./product-detail.html">
+                                    <h3 class="product-info-title my-2">Ghế Thư Giãn Barcelona</h3>
+                                    <div class="product-stars-rating my-2"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)</span></div></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-lg-4 my-3">  
+                            <div class="product-item bg-white">
+                              <div class="product-item-header">
+                                <div class="product-item-badges"><span class="selling-tag">Top <span>1</span></span><span class="status unlike cursor-pointer"><i class="far fa-heart"></i></span></div><a class="product-item-image" href="./product-detail.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></a>
+                              </div>
+                              <div class="product-item-body mt-1">
+                                <div class="product-item-info px-3 py-2 text-center">
+                                  <div class="product-price d-flex justify-content-center align-items-center">
+                                    <p class="mr-2 current-price">23,672,000 VND</p>
+                                    <p class="mr-2 old-price">29,590,000 VND</p>
+                                  </div><a class="cursor-pointer" href="./product-detail.html">
+                                    <h3 class="product-info-title my-2">Ghế Thư Giãn Barcelona</h3>
+                                    <div class="product-stars-rating my-2"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)                            </span></div></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-lg-4 my-3">  
+                            <div class="product-item bg-white">
+                              <div class="product-item-header">
+                                <div class="product-item-badges"><span class="selling-tag">Top <span>1</span></span><span class="status unlike cursor-pointer"><i class="far fa-heart"></i></span></div><a class="product-item-image" href="./product-detail.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></a>
+                              </div>
+                              <div class="product-item-body mt-1">
+                                <div class="product-item-info px-3 py-2 text-center">
+                                  <div class="product-price d-flex justify-content-center align-items-center">
+                                    <p class="mr-2 current-price">23,672,000 VND</p>
+                                    <p class="mr-2 old-price">29,590,000 VND</p>
+                                  </div><a class="cursor-pointer" href="./product-detail.html">
+                                    <h3 class="product-info-title my-2">Ghế Thư Giãn Barcelona</h3>
+                                    <div class="product-stars-rating my-2"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)</span></div></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-lg-4 my-3">  
+                            <div class="product-item bg-white">
+                              <div class="product-item-header">
+                                <div class="product-item-badges"><span class="selling-tag">Top <span>1</span></span><span class="status unlike cursor-pointer"><i class="far fa-heart"></i></span></div><a class="product-item-image" href="./product-detail.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></a>
+                              </div>
+                              <div class="product-item-body mt-1">
+                                <div class="product-item-info px-3 py-2 text-center">
+                                  <div class="product-price d-flex justify-content-center align-items-center">
+                                    <p class="mr-2 current-price">23,672,000 VND</p>
+                                    <p class="mr-2 old-price">29,590,000 VND</p>
+                                  </div><a class="cursor-pointer" href="./product-detail.html">
+                                    <h3 class="product-info-title my-2">Ghế Thư Giãn Barcelona</h3>
+                                    <div class="product-stars-rating my-2"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)</span></div></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-lg-4 my-3">  
+                            <div class="product-item bg-white">
+                              <div class="product-item-header">
+                                <div class="product-item-badges"><span class="selling-tag">Top <span>1</span></span><span class="status unlike cursor-pointer"><i class="far fa-heart"></i></span></div><a class="product-item-image" href="./product-detail.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/rla-armchair-barcelona-0000-1572576400.jpg" alt="Product Image"/></a>
+                              </div>
+                              <div class="product-item-body mt-1">
+                                <div class="product-item-info px-3 py-2 text-center">
+                                  <div class="product-price d-flex justify-content-center align-items-center">
+                                    <p class="mr-2 current-price">23,672,000 VND</p>
+                                    <p class="mr-2 old-price">29,590,000 VND</p>
+                                  </div><a class="cursor-pointer" href="./product-detail.html">
+                                    <h3 class="product-info-title my-2">Ghế Thư Giãn Barcelona</h3>
+                                    <div class="product-stars-rating my-2"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)                            </span></div></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shop_main_right_content_pagination d-flex justify-content-center">
+                        <ul>
+                          <li><a class="active" href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">last</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-sidemenu"><i class="fas fa-caret-square-right"></i></button>
+      </main>
+      <section id="footer">
+        <div id="footer-content">
+          <div class="footer-content wrapper-footer">
+            <div class="search">
+              <div class="container-fluid">
+                <div class="search-bar input-group">
+                  <div class="row w-100 align-items-center mx-0">
+                    <div class="col-lg-6 px-0">
+                      <h6 class="title d-flex align-items-center">
+                        <i class="far fa-envelope mr-2" style="font-size:30px"></i>Đăng ký nhận thông tin khuyến mãi</h6>
+                    </div>
+                    <div class="col-lg-6 px-0">
+                      <div class="input-bar w-100 px-0">
+                        <input class="form-control" type="text" placeholder="Nhập email của bạn"/>
+                        <button class="btn btn-sending px-4">Đăng ký</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="container-fluid">
+                <div class="row m-0 py-3">
+                  <div class="contact-detail col-md-3 col-sm-6 mb-2">
+                    <p class="footer-title-highlight my-2">Liên hệ</p>
+                    <div class="contact-content content-data">
+                      <ul>
+                        <li><span class="footer-title-highlight">Hot line: </span><span>01683540351</span></li>
+                        <li><span class="footer-title-highlight">Address: </span><span>672 đường số 6 phường Tân Hương quận Tân Phú tp.HCM</span></li>
+                        <li><span class="footer-title-highlight">Email:</span><span>techersoft@gmail.com</span></li>
+                      </ul>
+                      <div class="footer-logo my-2"><img src="http://logofaves.com/wp-content/uploads/2012/07/art_r.jpg?9cf02b"/></div>
+                    </div>
+                  </div>
+                  <div class="about-us col-md-4 col-sm-6 mb-2">
+                    <p class="footer-title-highlight my-2">Về chúng tôi</p>
+                    <div class="content-data">
+                      <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Thông tin cá nhân được bảo mật</a></li>
+                        <li><a href="">Chính sách bảo mật và thanh toán</a></li>
+                        <li><a href="">Quy chế hoạt động và những điều khoản tham gia </a></li>
+                        <li> <a href="">Bán hàng cùng chúng tôi   </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="customer-support col-md-3 col-sm-6 mb-2">
+                    <p class="footer-title-highlight my-2">Hỗ trợ khách hàng</p>
+                    <div class="content-data">
+                      <ul>
+                        <li><a href="">Q & A</a></li>
+                        <li><a href="">Hướng dẫn đặt hàng</a></li>
+                        <li><a href="">Hướng dẫn trải nghiệm home concept</a></li>
+                        <li><a href="">Quy trình đổi trả lại hàng</a></li>
+                        <li><a href="">Giải quyết khiếu nại của khách hàng</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="language col-md-2 col-sm-6 mb-2">
+                    <p class="footer-title-highlight my-2">Ngôn ngữ</p>
+                    <div class="content-data">
+                      <ul>
+                        <li><a href="">语言</a></li>
+                        <li><a href="">言語</a></li>
+                        <li><a href="">언어</a></li>
+                        <li><a href="">Linguagem</a></li>
+                        <li><a href="">язык</a></li>
+                        <li><a href="">Sprache</a></li>
+                        <li><a href="">Lingua</a></li>
+                        <li><a href="">La langue</a></li>
+                        <li><a href="">Idioma</a></li>
+                        <li><a href="">Sermone</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="co-operrate p-0">
+              <div class="end-footer">
+                <div class="container-fluid">
+                  <div class="row m-0 py-3">
+                    <div class="dipoma m-0 col-md-6 col-xl-5">
+                      <div class="content px-2 mb-2">
+                        <p class="footer-title-highlight mb-3">Copyright © 2019 <a href="#">Stickup</a>. All rights reserved.</p>
+                        <div class="social-icon">
+                          <div class="icon d-flex"><i class="fab fa-facebook mr-2"></i>
+<i class="fab fa-twitter-square mr-2"></i>
+<i class="fab fa-linkedin mr-2"></i>
+<i class="fab fa-instagram mr-2"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="social-contact col-md-6 col-xl-2 d-flex align-items-center flex-wrap">
+                      <div class="app-download d-flex p-0"><a href="./shop.html"><img class="m-0 w-custom" src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png" alt=""/></a></div>
+                    </div>
+                    <div class="payment col-lg-12 col-xl-5">
+                      <div class="content mb-3">
+                        <p>Allow payment base on</p>
+                      </div>
+                      <div class="logo-payment"><img class="mr-1" src="https://ps.w.org/official-skrill-woocommerce/assets/icon-256x256.jpg?rev=1605877"/><img class="mr-1" src="https://cdn.pixabay.com/photo/2013/12/08/12/12/bitcoin-225080_960_720.png"/><img class="mr-1" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"/><img class="mr-1" src="https://seeklogo.net/wp-content/uploads/2016/09/paypal-logo-preview.png"/><img class="mr-1" src="https://banner2.cleanpng.com/20181128/gkr/kisspng-mastercard-logo-visa-credit-card-portable-network-mastercard-plus-datacenter-trkiyeampaposde-5bfe50c6987830.6480665815433934786245.jpg"/><img class="mr-1" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Former_Visa_%28company%29_logo.svg"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header-search.js"></script>
+    <script src="../js/banner.js"></script>
+    <script src="../js/sub-menu.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/tab-product-info.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/concept.js"></script>
+    <script src="../js/product-info.js"></script>
+    <script src="../js/offer.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/shop.js"></script>
+  </body>
+</html>

@@ -22,13 +22,12 @@
         //     color: #666;
         // }
         .header-nav-menu_content{
-            display: flex;
+            display: block;
         }
     }
     
     a{
-        color: rgb(41, 171, 247);
-        font-weight: 500;
+        color: #333;
     }
     &:last-child{
         border: none;
@@ -53,17 +52,24 @@
 }
 .header-nav-menu_content{
     position: absolute;
-    left: 0;
     top: 45px;
-    width: 100%;
     background: #fff;
     border: 1px solid #eee;
     z-index: 21;
-    padding: 15px 0;
+    padding: 10px;
     box-shadow: 0 3px 3px 0 #bdbdbd;
     flex-wrap: wrap;
     display: none;
     transition: all .3s ease;
+    a{
+        padding: 5px 30px;
+        &:hover{
+            transition: all ease-in-out .3s;
+            background-color: rgba(0,0,0,.1);
+            color: rgb(68, 152, 248);
+        }
+    }
+    
 }
 .header-nav-menu_content-sub{
     li{
@@ -74,8 +80,12 @@
     }
 }
 .nav-menu_content-box{
-    width: 20%;
-    padding: 0 15px;
+    li{
+        padding: 5px 30px;
+        a{
+            font-weight: 400 !important;
+        }
+    }
     .item-project{
         transition: all .3s ease;
         &:hover{
@@ -137,25 +147,21 @@
     opacity: 0;
     pointer-events: none;
     right: -50%;
-    z-index: 13;
+    z-index: 1114;
     width: 300px;
-    border-left: 1px solid #d0cfcf;
     .wrapper-logo{
         position: relative;
     }
     .box-item-nav_mobile{
-        border-top: 1px solid #ccc;
         .header-nav-menu{
             display: none;
         }
         cursor: pointer;
-        &:last-child{
-            border-bottom: 1px solid #ccc;
-        }
+        
     }
     .widget_title{
         align-items: center;
-        padding: 5px 0;
+        padding: 7px 0;
         a{
             color: #333;
         }
@@ -213,7 +219,7 @@
         }
     }
     a{
-        color: #4dbc15;
+        color: #111;
         text-decoration: none;
         position: relative;
         &:before{
@@ -223,7 +229,7 @@
             left: 0;
             width: 0;
             height: 1px;
-            background-color: #4dbc15;
+            background-color: #111;
             transition: all .3s ease;
         }
     }

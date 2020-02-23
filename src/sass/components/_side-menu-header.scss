@@ -5,7 +5,7 @@
         padding: 10px 15px;
         background-color: #5894ff;
         color: white;
-        border-radius: 20px 20px 0 0;
+        border-radius: 10px 10px 0 0;
         cursor: pointer;
         i{
             font-size: 20px !important;
@@ -16,7 +16,7 @@
         }
     }
     .sub-menu-content{
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 10px 10px;
         border: 1px solid #5894ff;
         position: absolute;
         width: 240px;
@@ -41,11 +41,10 @@
 
 .left-100{
     left: 110% !important;
-    z-index: 1 !important;
+    z-index: 1111 !important;
     position: absolute;
     transition: all ease-out .2s;
-    transform: scale(1) !important;
-    opacity: 1 !important;
+    display: block !important;
 }
 
 .owl-carousel-banner{
@@ -56,4 +55,17 @@
             height: 100% !important;
         }
     }
+}
+
+@media (max-width: 576px){
+    .sub-menu-sidebar{
+        box-shadow: none !important;
+    }
+    .left-100{
+        left: 0 !important;
+        position: relative !important;
+        transition: all ease-out .2s;
+        display: block !important;
+    }
+    
 }

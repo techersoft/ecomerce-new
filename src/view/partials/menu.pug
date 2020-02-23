@@ -10,18 +10,17 @@ include ./datafake.pug
                 a.header-nav-menu_title(href="./index.html") HƯỚNG DẪN TRẢI NGHIỆM
             li.header-nav-menu_list
                 a.header-nav-menu_title(href="./concept.html") KHÔNG GIAN SỐNG
-                    .header-nav-menu_content
-                        each item in listMenuKgs
-                            .nav-menu_content-box.col-sm-4.mb-3
-                                a(href="./concept.html").item-project
-                                    .item-img
-                                        img.img-responsive(src=item.item)
-                                    .txt-desc.p-3
-                                        p=item.title
+                ul.header-nav-menu_content
+                    li 
+                        a(href="./concept.html") Chung cư
+                    li 
+                        a(href="./concept.html") Phòng trọ
             li.header-nav-menu_list
-                a.header-nav-menu_title(href="./index.html") ĐẶT HÀNG THEO MẪU
+                a.header-nav-menu_title(href="./product-order.html") ĐẶT HÀNG THEO MẪU
             li.header-nav-menu_list
-                a.header-nav-menu_title(href="./index.html") LOGIN | REGISTER
+                a.header-nav-menu_title(href="./login.html") LOGIN 
+                span  | 
+                a.header-nav-menu_title(href="./register.html") REGISTER
 .bg-wrapper
 .menu-mobile
     .wrapper-logo.py-4
@@ -33,30 +32,33 @@ include ./datafake.pug
                 span.icon-close-menu_mobile
     .box-item-nav_mobile
         .widget_title.d-flex.justify-content-between.px-3
-            a(href="#")
+            a(href="./index.html")
                 h6.m-0 HOME
     .box-item-nav_mobile
         .widget_title.d-flex.justify-content-between.px-3
-            a(href="#")
+            a(href="./index.html")
                 h6.m-0 HƯỚNG DẪN TRẢI NGHIỆM
     .box-item-nav_mobile
         .widget_title.d-flex.justify-content-between.px-3
-            a(href="#")
+            a(href="./concept.html")
                 h6.m-0 KHÔNG GIAN SỐNG
             button.btn-show-menu_mobile
                 <i class="fas fa-caret-down"></i>
         ul.container-fluid.header-nav-menu.px-4
             .nav-menu_content-box_mobile.my-2
                 li.header-nav-menu_title_mobile.d-flex.align-items-center
-                    a(href="#") Dự án
+                    a(href="./concept.html") Chung cư
             .nav-menu_content-box_mobile.my-2
                 li.header-nav-menu_title_mobile.d-flex.align-items-center
-                    a(href="#") Phòng đơn
+                    a(href="./concept.html") Phòng trọ
     .box-item-nav_mobile
         .widget_title.d-flex.justify-content-between.px-3
-            a(href="#")
+            a(href="./product-order.html")
                 h6.m-0 ĐẶT HÀNG THEO MẪU
     .box-item-nav_mobile
-        .widget_title.d-flex.justify-content-between.px-3
-            a(href="#")
-                h6.m-0 LOGIN | REGISTER
+        .widget_title.d-flex.px-3
+            a(href="./login.html")
+                h6.m-0 LOGIN  
+            span.mx-1 |  
+            a(href="./register.html")
+                h6.m-0  REGISTER

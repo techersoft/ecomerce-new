@@ -1,0 +1,49 @@
+extends ../layouts/layout.pug
+block main-content
+    .layout-content
+        section#header
+            include ./../partials/header.pug
+            include ./../partials/navigation.pug
+        section#login-register
+            .container-fluid
+                .title-inside-page.my-3
+                    .d-flex.align-items-center
+                        a.info-outside(href="./index.html") HOME
+                        .icon-inside.px-2
+                            <i class="fas fa-chevron-right"></i>
+                        a.info-inside(href="./register.html") REGISTER
+                .form-login-register
+                    .row.justify-content-center
+                        .col-md-6
+                            .form_login-register.form-register.p-3
+                                .form-title
+                                    h5 REGISTER
+                                .row
+                                    .col-md-6
+                                        .form-info
+                                            label(for="firstname") First name *
+                                            input(type="text")
+                                    .col-md-6
+                                        .form-info
+                                            label(for="lastname") Last name *
+                                            input(type="text")
+                                    .col-12
+                                        .form-info
+                                            label(for="email-address") Email address *
+                                            input(type="text")
+                                    .col-md-6
+                                        .form-info
+                                            label(for="password") Password *
+                                            .input-password
+                                                input(type="password" id="password1")
+                                                <i class="fas fa-eye-slash" id="eye1"></i>
+                                    .col-md-6
+                                        .form-info
+                                            label(for="confirm-password") Confirm password *
+                                            .input-password
+                                                input(type="password" id="password2")
+                                                <i class="fas fa-eye-slash" id="eye2"></i>
+                                .w-100
+                                    button.btn.btn-cancel.w-100.py-1.px-3.my-3(type="submit") Register
+        section#footer.mt-5
+            include ./../partials/footer.pug

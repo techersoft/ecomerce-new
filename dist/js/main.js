@@ -1,6 +1,41 @@
 "use strict";
 
 $(document).ready(function () {
+  //Show password
+  $('#eye').click(function () {
+    if ($(this).hasClass('fa-eye-slash')) {
+      $(this).removeClass('fa-eye-slash');
+      $(this).addClass('fa-eye');
+      $('#password').attr('type', 'text');
+    } else {
+      $(this).removeClass('fa-eye');
+      $(this).addClass('fa-eye-slash');
+      $('#password').attr('type', 'password');
+    }
+  });
+  $('#eye1').click(function () {
+    if ($(this).hasClass('fa-eye-slash')) {
+      $(this).removeClass('fa-eye-slash');
+      $(this).addClass('fa-eye');
+      $('#password1').attr('type', 'text');
+    } else {
+      $(this).removeClass('fa-eye');
+      $(this).addClass('fa-eye-slash');
+      $('#password1').attr('type', 'password');
+    }
+  });
+  $('#eye2').click(function () {
+    if ($(this).hasClass('fa-eye-slash')) {
+      $(this).removeClass('fa-eye-slash');
+      $(this).addClass('fa-eye');
+      $('#password2').attr('type', 'text');
+    } else {
+      $(this).removeClass('fa-eye');
+      $(this).addClass('fa-eye-slash');
+      $('#password2').attr('type', 'password');
+    }
+  }); //
+
   var productItem = $('.product-item-slider');
   var productList = $('.product-list-slider');
   $('.product-item').get().forEach(function (item) {
@@ -100,6 +135,12 @@ $(document).ready(function () {
     lensFadeOut: 100,
     zoomWindowWidth: 400,
     zoomWindowHeight: 400
+  }); // zoom responsive
+
+  var hideZoom = $('.thumbs-img').data('elevateZoom');
+  var maxMedia = window.matchMedia('(max-width: 768px)');
+  maxMedia.addListener(function (b) {
+    hideZoom.changeState('disable');
   }); // Display Image Upload
 
   function readURL(input) {

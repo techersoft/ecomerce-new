@@ -84,7 +84,7 @@
     }
     .tab-wrapper{
         .tabs {
-            overflow: hidden;
+            overflow-x: auto;
             display: flex;
             border-bottom: solid 1px #acacac;
             margin-bottom: 0;
@@ -96,6 +96,7 @@
                     text-transform: uppercase;
                     text-decoration: none;
                     transition: color 0.2s ease;
+                    white-space: nowrap;
                 }
             
             }

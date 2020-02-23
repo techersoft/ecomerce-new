@@ -71,6 +71,7 @@ $(document).ready(function () {
       $("#logo-header").css('opacity', '1');
       $('.op-menu').removeClass('clo-menu');
       $('.offer-content-list-supplier').removeClass('show-list-details');
+      $('.content-shop_main_left').removeClass('show-menu_shop');
     }
   });
   $(window).click(function (e) {

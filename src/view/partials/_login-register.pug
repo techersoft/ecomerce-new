@@ -1,12 +1,12 @@
 .container-fluid
     .title-inside-page.my-3
             .d-flex.align-items-center
-                a.info-outside(href="") HOME
+                a.info-outside(href="./index.html") HOME
                 .icon-inside.px-2
                     <i class="fas fa-chevron-right"></i>
-                a.info-inside(href="") LOGIN/REGISTER
+                a.info-inside(href="./login.html") LOGIN
     .form-login-register
-        .row
+        .row.justify-content-center
             .col-md-6
                 .form_login-register.form-login.p-3
                     .form-title
@@ -38,36 +38,6 @@
                                 <i class="fab fa-twitter-square mr-2"></i>
                                 <i class="fab fa-linkedin mr-2"></i>
                                 <i class="fab fa-instagram mr-2"></i>
-            .col-md-6
-                .form_login-register.form-register.p-3
-                    .form-title
-                        h5 REGISTER
-                    .row
-                        .col-md-6
-                            .form-info
-                                label(for="firstname") First name *
-                                input(type="text")
-                        .col-md-6
-                            .form-info
-                                label(for="lastname") Last name *
-                                input(type="text")
-                        .col-12
-                            .form-info
-                                label(for="email-address") Email address *
-                                input(type="text")
-                        .col-md-6
-                            .form-info
-                                label(for="password") Password *
-                                .input-password
-                                    input(type="password" id="password1")
-                                    <i class="fas fa-eye-slash" id="eye1"></i>
-                        .col-md-6
-                            .form-info
-                                label(for="confirm-password") Confirm password *
-                                .input-password
-                                    input(type="password" id="password2")
-                                    <i class="fas fa-eye-slash" id="eye2"></i>
-                    .w-100
-                        button.btn.btn-cancel.w-100.py-1.px-3.my-3(type="submit") Register
+            
 
 

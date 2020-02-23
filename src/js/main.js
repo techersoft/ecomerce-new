@@ -139,6 +139,8 @@ $(document).ready(function () {
 
     })
 
+    
+
     // Get the url of the first images
     function getFirstImage() {
         var firstUrl = $('.thumbs-item img').first().attr('src');
@@ -176,6 +178,17 @@ $(document).ready(function () {
             zoomWindowHeight: 400
         }
     );
+
+    // zoom responsive
+    var hideZoom = $('.thumbs-img').data('elevateZoom');
+    var maxMedia = window.matchMedia('(max-width: 768px)');
+
+    maxMedia.addListener((b) => {
+        
+
+            hideZoom.changeState('disable');
+
+    });
 
     // Display Image Upload
     function readURL(input) {

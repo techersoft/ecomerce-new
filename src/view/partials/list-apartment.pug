@@ -1,88 +1,94 @@
 #list-apartment.pt-3
-    .form-search-apartment.py-4.mb-3
-        .search
-            .search-bar.input-group.form-relative
-                .input-bar.w-100
-                    input.form-control.border-input(type="text" placeholder="Nhập tên chung cư")
-                    button.btn.btn-sending.px-4.text-nowrap.btn-sending-custom 
-                        a(href="./drawings-designs.html") Tìm kiếm
-    .row.mx-0.bg-deepgrey.pb-5.pt-3
-        .col-sm-6
-            .box-apartment.mt-4
-                a.img-apartment(href="./drawings-designs.html")
-                    img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/the%20tree.jpeg", alt="")
-                .caption
-                    .title
-                        a(href="./drawings-designs.html")
-                            h3 CityHouse - The Tree Apartment
-                    .text-content
-                        h3
-                            b Tiêu chuẩn nâng cao
-                    span.area Giá từ 550 - 700 $
-                    .address 217 Đường Nguyễn Văn Thủ, Phường Dakao, Quận 1
-        .col-sm-6
-            .box-apartment.mt-4
-                a.img-apartment(href="./drawings-designs.html")
-                    img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/DSC_0003 10-20-2017.jpeg", alt="")
-                .caption
-                    .title
-                        a(href="./drawings-designs.html")
-                            h3 CityHouse - Nguyen Trai Apartment
-                    .text-content
-                        h3
-                            b Tiêu chuẩn nâng cao
-                    span.area Giá từ 450 - 600 $
-                    .address 207 Đường Nguyễn Trãi, Phường Nguyễn Cư Trinh, Quận 1
-        .col-sm-6
-            .box-apartment.mt-4
-                a.img-apartment(href="./drawings-designs.html")
-                    img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/City House - Hoang Linh 2-19.jpeg", alt="")
-                .caption
-                    .title
-                        a(href="./drawings-designs.html")
-                            h3 CityHouse - Hoang Linh Apartment
-                    .text-content
-                        h3
-                            b Tiêu chuẩn nâng cao
-                    span.area Giá từ 500 - 700 $
-                    .address 27 Đường Thạch Thị Thanh, Phường Tân Định, Quận 1
-        .col-sm-6
-            .box-apartment.mt-4
-                a.img-apartment(href="./drawings-designs.html")
-                    img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/City House - Hoang Long Apartment  - 4.jpeg", alt="")
-                .caption
-                    .title
-                        a(href="./drawings-designs.html")
-                            h3 CityHouse - Hoang Long Apartment
-                    .text-content
-                        h3
-                            b Tiêu chuẩn nâng cao
-                    span.area Giá từ 550 - 700 $
-                    .address 233 Đường Đặng Tất, Phường Tân Định, Quận 1
-        .col-sm-6
-            .box-apartment.mt-4
-                a.img-apartment(href="./drawings-designs.html")
-                    img(src="https://cityhouseapartment.com/uploads/projects/City-House-Dang-Tat-Prime-2Beds-1-2_city_house_box_1505704696.jpeg", alt="")
-                .caption
-                    .title
-                        a(href="./drawings-designs.html")
-                            h3 CityHouse - Dang Tat
-                    .text-content
-                        h3
-                            b Tiêu chuẩn nâng cao
-                    span.area Giá từ 550 - 700 $
-                    .address Đường Đặng Tất, Phường Tân Định, Quận 1
-        .col-sm-6
-            .box-apartment.mt-4
-                a.img-apartment(href="./drawings-designs.html")
-                    img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/cogingapartment.png", alt="")
-                .caption
-                    .title
-                        a(href="./drawings-designs.html")
-                            h3 CityHouse - Co Giang
-                    .text-content
-                        h3
-                            b Tiêu chuẩn nâng cao
-                    span.area Giá từ 550 - 700 $
-                    .address 179 Đường Cô Giang, Phường Cô Giang, Quận 1
-                    
+    .container-fluid
+        .form-search-apartment.py-4.mb-3
+            .search
+                .search-bar.input-group
+                    .input-bar.d-flex
+                        select.form-control.border-input
+                            option(value="Tất cả" checked) Tất cả
+                            option(value="Chung cư") Chung cư
+                            option(value="Phòng trọ") Phòng trọ
+                        button.btn.btn-sending.px-4.text-nowrap.btn-sending-custom.ml-2
+                            a(href="./drawings-designs.html") Tìm kiếm
+    .bg-deepgrey
+        .container-fluid
+            .row.pb-5.pt-3
+                .col-sm-6
+                    .box-apartment.mt-4
+                        a.img-apartment(href="./drawings-designs.html")
+                            img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/the%20tree.jpeg", alt="")
+                        .caption
+                            .title
+                                a(href="./drawings-designs.html")
+                                    h3 CityHouse - The Tree Apartment
+                            .text-content
+                                h3
+                                    b Tiêu chuẩn nâng cao
+                            span.area Giá từ 550 - 700 $
+                            .address 217 Đường Nguyễn Văn Thủ, Phường Dakao, Quận 1
+                .col-sm-6
+                    .box-apartment.mt-4
+                        a.img-apartment(href="./drawings-designs.html")
+                            img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/DSC_0003 10-20-2017.jpeg", alt="")
+                        .caption
+                            .title
+                                a(href="./drawings-designs.html")
+                                    h3 CityHouse - Nguyen Trai Apartment
+                            .text-content
+                                h3
+                                    b Tiêu chuẩn nâng cao
+                            span.area Giá từ 450 - 600 $
+                            .address 207 Đường Nguyễn Trãi, Phường Nguyễn Cư Trinh, Quận 1
+                .col-sm-6
+                    .box-apartment.mt-4
+                        a.img-apartment(href="./drawings-designs.html")
+                            img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/City House - Hoang Linh 2-19.jpeg", alt="")
+                        .caption
+                            .title
+                                a(href="./drawings-designs.html")
+                                    h3 CityHouse - Hoang Linh Apartment
+                            .text-content
+                                h3
+                                    b Tiêu chuẩn nâng cao
+                            span.area Giá từ 500 - 700 $
+                            .address 27 Đường Thạch Thị Thanh, Phường Tân Định, Quận 1
+                .col-sm-6
+                    .box-apartment.mt-4
+                        a.img-apartment(href="./drawings-designs.html")
+                            img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/City House - Hoang Long Apartment  - 4.jpeg", alt="")
+                        .caption
+                            .title
+                                a(href="./drawings-designs.html")
+                                    h3 CityHouse - Hoang Long Apartment
+                            .text-content
+                                h3
+                                    b Tiêu chuẩn nâng cao
+                            span.area Giá từ 550 - 700 $
+                            .address 233 Đường Đặng Tất, Phường Tân Định, Quận 1
+                .col-sm-6
+                    .box-apartment.mt-4
+                        a.img-apartment(href="./drawings-designs.html")
+                            img(src="https://cityhouseapartment.com/uploads/projects/City-House-Dang-Tat-Prime-2Beds-1-2_city_house_box_1505704696.jpeg", alt="")
+                        .caption
+                            .title
+                                a(href="./drawings-designs.html")
+                                    h3 CityHouse - Dang Tat
+                            .text-content
+                                h3
+                                    b Tiêu chuẩn nâng cao
+                            span.area Giá từ 550 - 700 $
+                            .address Đường Đặng Tất, Phường Tân Định, Quận 1
+                .col-sm-6
+                    .box-apartment.mt-4
+                        a.img-apartment(href="./drawings-designs.html")
+                            img(src="https://cityhouseapartment.com/uploads/projects/boxAvatar/cogingapartment.png", alt="")
+                        .caption
+                            .title
+                                a(href="./drawings-designs.html")
+                                    h3 CityHouse - Co Giang
+                            .text-content
+                                h3
+                                    b Tiêu chuẩn nâng cao
+                            span.area Giá từ 550 - 700 $
+                            .address 179 Đường Cô Giang, Phường Cô Giang, Quận 1
+                            

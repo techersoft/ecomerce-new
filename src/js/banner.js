@@ -12,14 +12,10 @@ $(document).ready(function(){
         smartSpeed:750,
         responsive:{
             0:{
-                items:1,
-            },
-            
-            500:{
                 items:2,
             },
             
-            700:{
+            500:{
                 items:3,
             }
         }

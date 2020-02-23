@@ -19,7 +19,7 @@
     .sidebar-menu{
         background-color: white;
         .menu-item{
-            padding: 3px 0;
+            padding: 5px 0;
             position: relative;
             span{
                 font-size: 12px;
@@ -29,16 +29,12 @@
                 cursor: pointer;
             }
             .sub-menu-sidebar{
-                position: absolute;
-                left: 0;
-                transform: scale(0);
+                display: none;
                 background-color: #fff;
-                opacity: 0;
                 top: 0;
                 width: 100%;
                 padding-left: 15px;
-                transition: ease-in-out all .2s;
-                border: 1px solid;
+                box-shadow: 2px 3px 6px 1px grey;
                 li{
                     padding-top: 10px;
                     padding-left: 15px;
@@ -52,9 +48,9 @@
             }
         }
         .sub-menu-content{
-            padding: 10px 15px;
+            padding: 15px;
             margin-bottom: 0;
-            z-index: 1111;
+            z-index: 10;
             background-color: #fff;
             a{
                 text-decoration: none;

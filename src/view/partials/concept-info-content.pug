@@ -1,108 +1,85 @@
 include ./datafake.pug
-.concept-info_wrapper
-    .menu-concept
-        ul.left-menu
-            li
-                a.menu-concept-item.active-concept(href="#photo") <i class="fas fa-image"></i>
-            li
-                a.menu-concept-item(href="#tag") <i class="fas fa-tag"></i>
-            li
-                a.menu-concept-item(href="#question") <i class="fas fa-question-circle"></i>
-        ul.right-menu
-            li
-                a(href="#") 
-                    <i class="fas fa-shopping-cart"></i>
-                    span 0
-            li
-                a.close(href="./index.html") <i class="fas fa-times"></i>
-    .concept-content-box.p-3.pt-5
-        .concept-content-space-owner.mt-3  
+.concept-info_wrapper.bg-deepgrey
+    .concept-content-box.p-3
+        .concept-content-space-owner 
             .concept-content-space-owner_info-details
                 .space-info_title.mb-1
                     h2
-                        span.space-title__line Albany Four - New Show Home
-                        span.space-title__line.space-title__line-sub Contemporary Pool, Auckland
-                .space-owner_info-details_rating.d-flex
+                        span.space-title__line Phòng ngủ gia đình
+                .space-owner_info-details_rating.d-flex.mt-2
                     .space-owner_info-details_rating_icon
-                        span.fa.fa-star.checked
-                        span.fa.fa-star.checked
-                        span.fa.fa-star.checked
-                        span.fa.fa-star.checked
-                        span.fa.fa-star.checked
+                        span
+                            i.fa.fa-star.checked
+                        span
+                            i.fa.fa-star.checked
+                        span
+                            i.fa.fa-star.checked
+                        span
+                            i.fa.fa-star.checked
+                        span
+                            i.fa.fa-star
                     span.ml-2(style="font-size:13px;line-height:23px") 4 Lượt xem
     .concept-content-box.px-3.pt-3.pb-0
         .concept-content-space-info
             .space-facets
-                ul.space-facets_content
-                    li
-                        a(href="#").text-green Contemporary
-                    li
-                        a(href="#").text-green Auckland
-                    li
-                        a(href="#").text-green Website
-                            span.more-icon
-            .space-description.mb-5
-                p Mike Hollman
+                span Thương hiệu: 
+                img(src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png", alt="")
+            .space-description.d-flex.my-2
+                span.mr-3 Share:
+                .social-icon
+                    .icon.d-flex.icon-contacts-detail
+                        a(href="#")
+                            <i class="fab fa-facebook mr-2"></i>
+                        a(href="#")
+                            <i class="fab fa-twitter-square mr-2"></i>
+                        a(href="#")
+                            <i class="fab fa-linkedin mr-2"></i>
+                        a(href="#")
+                            <i class="fab fa-instagram mr-2"></i>
             .concept-project-photo#photo
                 .concept_title
-                    h2 Hình ảnh khác
-                        a(href="#").text-green.ml-1 Albany Four
+                    h2 Concept được yêu thích nhất
                     .project-photo_img.my-2
-                        .row.m-0
-                            .box-img.px-1.mb-2.grid-reponsive-custom
-                                a(href="./concept.html")
-                                    .img_responsive
+                        .owl-carousel.owl-theme.owl-carousel-concept
+                            .item
+                                .box-img
+                                    a(href="#")
                                         img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
-                            .box-img.px-1.mb-2.grid-reponsive-custom
-                                a(href="./concept.html")
-                                    .img_responsive
+                            .item
+                                .box-img
+                                    a(href="#")
                                         img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
-                            .box-img.px-1.mb-2.grid-reponsive-custom
-                                a(href="./concept.html")
-                                    .img_responsive
+                            .item
+                                .box-img
+                                    a(href="#")
                                         img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
-                            .box-img.px-1.mb-2.grid-reponsive-custom
-                                a(href="./concept.html")
-                                    .img_responsive
+                            .item
+                                .box-img
+                                    a(href="#")
                                         img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
-                            .box-img.px-1.mb-2.grid-reponsive-custom
-                                a(href="./concept.html")
-                                    .img_responsive
-                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
+                        
     .concept-content-box.px-3.pt-3
         .contept-content-recommendations-spaces
             .concept_title
-                h2 Ý tưởng tương tự 
-            .recommendations-spaces_photo
-                .recommendations-spaces_photo_img.my-2
-                    .row.m-0
-                        each item in listImgConcept
-                            .box-img.px-1.mb-2.grid-reponsive-custom
-                                a(href="./concept.html")
-                                    .img_responsive
-                                        img(src=item)
-    .concept-content-box.px-3.pt-3
-        .contept-content-space-rel-prod#tag
-            .concept_title
-                h2 Sản phẩm liên quan
-            .space-rel-prod_photo
-                .space-rel-prod_photo_img.my-2
-                    .row.m-0
-                        each item in listImgConceptProduct
-                            .box-img.px-1.mb-2.col-3
-                                a(href=item.href)
-                                    .img_responsive
-                                        img(src=item.src)
-                                    .space-price.text-center.d-block
-                                        span=item.price
-    .concept-content-box.px-3.pt-3
-        .contept-content-comment-question#question
-            .concept_title
-                h2 Câu hỏi về bức ảnh này (25)
-            .comment-question.my-3
-                .btn-cmt-quest
-                    button.btn_cmt-quest Hỏi Đáp
-                .notification-cmt-quest.my-1
-                    span Có bất kì câu hỏi nào về ảnh? Nhắn tin hỏi tại đây.
+                h2 Concept tương tự 
+                    .project-photo_img.my-2
+                        .owl-carousel.owl-theme.owl-carousel-concept
+                            .item
+                                .box-img
+                                    a(href="#")
+                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
+                            .item
+                                .box-img
+                                    a(href="#")
+                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
+                            .item
+                                .box-img
+                                    a(href="#")
+                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
+                            .item
+                                .box-img
+                                    a(href="#")
+                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
+    
                     
 

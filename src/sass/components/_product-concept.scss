@@ -5,11 +5,9 @@
         right: 0;
         bottom: 0;
         top: 0;
-        height: 100vh;
         width: 100%;
         background-color: #f4f4f4;
         .carousel-product{
-            max-height: 100vh;
             display: flex;
             align-items: center;
             position: relative;
@@ -23,38 +21,10 @@
                 img{
                     width: 100%;
                     display: block;
-                    min-width: 500px;
                     min-height: 300px;
                 }
             }
-            .btn-group-contacts{
-                position: absolute;
-                display: flex;
-                width: 100%;
-                justify-content: center;
-                bottom: 50px;
-                .btn{
-                    background-color: #fff !important;
-                    border-radius: 3px;
-                    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.35) !important;
-                    
-                }
-                .btn-email,
-                .btn-save{
-                    min-width: 90px;
-                    font-family: sans-serif;
-                    font-weight: 600;
-                }
-                .btn-show{
-                    position: absolute;
-                    right: 30px;
-                    width: 35px; 
-                    height: 35px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
+            
         }
         .show-more-product{
             pointer-events: auto !important;
@@ -262,10 +232,10 @@
 }
 
 .height-down{
-    height: calc(100vh - 150px) !important;
-    width: 80% !important;
+    height: calc(100% - 150px) !important;
+    width: 90% !important;
     margin: auto;
-    transition: all .3s ease;
+    transition: all ease-in-out .3s;
 }
 
 .color-default{

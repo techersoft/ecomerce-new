@@ -111,6 +111,7 @@
         width: 100%;
         display: block;
         object-fit: cover;
+        max-height: 440px;
     }
 }
 
@@ -202,8 +203,16 @@
                 padding: 10px 2px;
                 text-align: center;
                 border-radius: 2px;
+                border: 1px solid #47a4ec;
+                transition: all ease-in-out .3s;
                 a{
-                    color: #fff;
+                    color: #47a4ec;
+                }
+                &:hover{
+                    background-color: #47a4ec;
+                    a{
+                        color: #fff;
+                    }
                 }
             }
         }
@@ -252,19 +261,19 @@
 }
 
 .bg-orange{
-    background-color: #ffd400;
+    background-color: orange;
 }
 .bg-gb{
-    background-color: #2bffc4;
+    background-color: #18cc9a;
 }
-.bg-custom-green{
-    background-color: #3ef53b;
+.bg-custom-tomato{
+    background-color: #d6862e;
 }
 .bg-custom-pink{
     background-color: #ff42e8;
 }
 .bg-silver{
-    background-color: #ede1ec;
+    background-color: #ababab;
 }
 .bg-brown{
     background-color: #a16222;

@@ -2,14 +2,10 @@
     .banner{
         margin-bottom: 15px;
         position: relative;
-        .img-banner{
-            img{
-                
-                width: 100%;
-                display: block;
-                // height: 400px;
-                object-fit: cover;
-            }
+        img{
+            width: 100%;
+            display: block;
+            object-fit: cover;
         }
         .img-banner-center{
             &::before{
@@ -96,9 +92,17 @@
     background: rgba(0,0,0,0.6);
     padding: 3px 20px;
     border-radius: 20px;
+    border: 3px solid transparent;
     white-space: nowrap;
+    transition: all ease-in-out .3s;
     &:hover{
         color: #fff;
+    }
+}
+.btn-hover-link{
+    transition: all ease-in-out .3s;
+    &:hover{
+        border: 3px solid #47a4ec;
     }
 }
 @media(max-width: 768px){

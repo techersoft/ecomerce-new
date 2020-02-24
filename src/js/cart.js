@@ -9,11 +9,8 @@ $(document).ready(function(){
         if(!$this.parent('.shopping-card').find('.shopping-card_list').hasClass('show-card-list')){
             $this.parent('.shopping-card').find('.shopping-card_list').addClass('show-card-list');
             $this.parent('.shopping-card').css('z-index','13')
-            $(".bg-wrapper-tras").addClass('show-bg-wrapper-tras');
         }else{
             $this.parent('.shopping-card').find('.shopping-card_list').removeClass('show-card-list');
-            $(".bg-wrapper-tras").addClass('show-bg-wrapper-tras');
-            $(".bg-wrapper-tras").removeClass('show-bg-wrapper-tras');
         }
     })
 })

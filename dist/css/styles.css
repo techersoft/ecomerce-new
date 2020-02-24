@@ -2732,6 +2732,16 @@ input {
       #hot-keyword .hot-keyword .owl-carousel-hotkey .btn-hot-keyword:hover a {
         color: #fff; }
 
+.living-space h3, .living-space h5 {
+  font-weight: 500; }
+
+.living-space h5 {
+  font-size: 18px; }
+
+.living-space li {
+  font-size: 14px;
+  margin-top: 5px; }
+
 .owl-nav {
   margin: 0 !important; }
   .owl-nav .owl-prev {
